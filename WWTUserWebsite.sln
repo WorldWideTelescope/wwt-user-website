@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WWTUserWebsite", "WWTUserWebsite\WWTUserWebsite.csproj", "{B6B16748-82A6-4AFE-92E0-CB3732891F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WWTUserWebsite.Tests", "WWTUserWebsite.Tests\WWTUserWebsite.Tests.csproj", "{EC6C0C8F-96D1-4A46-8E14-1C24A5986388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6B16748-82A6-4AFE-92E0-CB3732891F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B16748-82A6-4AFE-92E0-CB3732891F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B16748-82A6-4AFE-92E0-CB3732891F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B16748-82A6-4AFE-92E0-CB3732891F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6C0C8F-96D1-4A46-8E14-1C24A5986388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6C0C8F-96D1-4A46-8E14-1C24A5986388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6C0C8F-96D1-4A46-8E14-1C24A5986388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6C0C8F-96D1-4A46-8E14-1C24A5986388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
