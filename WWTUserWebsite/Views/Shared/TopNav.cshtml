@@ -32,24 +32,12 @@
                         </a>
                     </li>
                     <li class="social">
-                        @if (Model.User != null)
-                {
-                            <div id="signinContainer" loggedIn="true">
-                                <a class="social" href="/Community/#/MyProfile" id="username" data-toggle="tooltip" data-placement="bottom"
-                                   data-title="@("Welcome, " +Model.User.FirstName + " " + Model.User.LastName). Click to view your WWT community profile">
-                                    <i class="fa fa-user" style="color:#009cff"></i>
-                                </a>
-                            </div>
-                        }
-                        else
-                        {
                             <div id="signinContainer">
                                 <a class="social" href="javascript:void(0)" id="signin" data-toggle="tooltip" data-placement="bottom"
                                    data-title="Sign in to WWT">
                                     <i class="fa fa-sign-in"></i>
                                 </a>
                             </div>
-                        }
                     </li>
                     @if (ConfigurationManager.AppSettings["twitterId"] != "xxx")
                     {
@@ -133,7 +121,7 @@
                         <li><a href="/GetInvolved/Develop">Develop</a></li>
                         <li class="divider"></li>
                         <li><a href="/Community/">Community Content</a></li>
-                        <li id="profileMenuItem" class="@(Model.User == null ? "hide" : "")"><a href="/Community/Profile">My Profile</a></li>
+                        <li id="profileMenuItem" class="hide"><a href="/Community/Profile">My Profile</a></li>
                     </ul>
                 </li>
             </ul>

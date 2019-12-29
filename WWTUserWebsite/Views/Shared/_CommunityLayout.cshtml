@@ -96,15 +96,9 @@
                 <li class="active" id="communityLink">
                     <a href="/Community#/">Community Content</a>
                 </li>
-                <li class="@(Model.User == null ? "hide" : "")" id="profileLink">
+                <li class="hide" id="profileLink">
                     <a href="/Community/Profile/">My Profile</a>
                 </li>
-                @if (Model.User != null && Model.User.UserType == UserTypes.SiteAdmin)
-                {
-                    <li id="tourAdmin">
-                        <a href="/Community#/TourAdmin">Tour Admin</a>
-                    </li>
-                }
             </ul>
         </div>
     </div>
