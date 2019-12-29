@@ -22,6 +22,13 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: Grunt@0
+  inputs:
+    gruntFile: 'WWTUserWebsite\Gruntfile.js'
+    targets: 'dist-css'
+    gruntCli: 'node_modules/grunt-cli/bin/grunt'
+  displayName: Compile Less to CSS with Grunt
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
