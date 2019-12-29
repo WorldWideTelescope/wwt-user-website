@@ -36,17 +36,10 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(build.artifactStagingDirectory)\WWTUserWebsite.zip'
+    targetPath: '$(build.artifactStagingDirectory)'
     publishLocation: 'pipeline'
-    artifactName: WWTUserWebsite
-  displayName: Publish web deployment bundle artifact
-
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(build.artifactStagingDirectory)\WWTUserWebsite.deploy.cmd'
-    publishLocation: 'pipeline'
-    artifactName: WWTUserWebsite
-  displayName: Publish sample deployment command artifact
+    artifactName: wwt-user-website-deployment
+  displayName: Publish web deployment artifacts
 
 - task: AzureRmWebAppDeployment@4
   inputs:
