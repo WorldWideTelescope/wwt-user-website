@@ -2,17 +2,12 @@
   "name": "wwt_user_website",
   "description": "AAS WorldWide Telescope user-facing website.",
   "version": "0.1.0",
-
   "keywords": [
     "AAS WorldWide Telescope"
   ],
-
   "homepage": "http://worldwidetelescope.org",
-
   "author": "The AAS WorldWide Telescope team",
-
   "repository": "github:WorldWideTelescope/wwt-user-website",
-
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "~1.0.1",
@@ -26,11 +21,9 @@
     "npm-shrinkwrap": "~5.1.0",
     "time-grunt": "~1.0.0"
   },
-
   "engines": {
     "node": "~0.10.1"
   },
-
   "buildConfig": {
     "uglify": true
   }
