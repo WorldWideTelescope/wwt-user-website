@@ -15,7 +15,6 @@ namespace WWTUserWebsite.Models
         private readonly string _downloadUrl;
         private readonly string _legacyUrl;
         private bool _isOpenWwtKiosk = false;
-        private ProfileDetails _profile;
 
         public BaseModel()
         {
@@ -86,21 +85,6 @@ namespace WWTUserWebsite.Models
         {
             get { return _isOpenWwtKiosk; }
             set { _isOpenWwtKiosk = value; }
-        }
-
-        public ProfileDetails User
-        {
-            get
-            {
-                if (_profile != null)
-                {
-                    return _profile;
-                }
-                var profileDetails = SessionWrapper.Get<ProfileDetails>("ProfileDetails");
-                return profileDetails;
-            }
-
-            set { _profile = value; }
         }
     }
 }

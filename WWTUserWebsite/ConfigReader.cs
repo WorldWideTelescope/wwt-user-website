@@ -2,7 +2,6 @@
 using System.Configuration;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace WWTUserWebsite
 {
@@ -72,23 +71,8 @@ namespace WWTUserWebsite
         public static T GetSetting(string settingKey, T defaultValue)
         {
             string settingValue = string.Empty;
-            try
-            {
+            settingValue = ConfigurationManager.AppSettings[settingKey];
 
-                if (RoleEnvironment.IsAvailable)
-                {
-                    settingValue = RoleEnvironment.GetConfigurationSettingValue(settingKey);
-                }
-                else
-                {
-                    settingValue = ConfigurationManager.AppSettings[settingKey];
-                }
-
-            }
-            catch
-            {
-                settingValue = ConfigurationManager.AppSettings[settingKey];
-            }
             if (!string.IsNullOrEmpty(settingValue))
             {
                 return (T)Convert.ChangeType(settingValue, typeof(T), CultureInfo.InvariantCulture);

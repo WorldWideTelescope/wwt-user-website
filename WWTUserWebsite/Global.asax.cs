@@ -12,8 +12,6 @@ namespace WWTUserWebsite
     {
         protected void Application_Start()
         {
-            AutoMapperSettings.RegisterControllerAutoMappers();
-            AutoMapperSettings.RegisterServiceAutoMappers();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -26,8 +24,6 @@ namespace WWTUserWebsite
             var cryptoEx = error as CryptographicException;
             if (cryptoEx != null)
             {
-                FederatedAuthentication.SessionAuthenticationModule.SignOut();
-                SessionWrapper.Clear();
                 Server.ClearError();
             }
         }

@@ -14,19 +14,6 @@ namespace WWTUserWebsite.Controllers
     /// </summary>
     public class HomeController : ControllerBase
     {
-        #region Constructor
-
-        /// <summary>
-        /// Initializes a new instance of the HomeController class.
-        /// </summary>
-        /// <param name="profileService">Instance of profile Service</param>
-        public HomeController(IProfileService profileService)
-            : base(profileService)
-        {
-        }
-
-        #endregion Constructor
-
         /// <summary>
         /// Startup Action which is default action rendering the home page. This needs to be added because of the
         /// issue with WindowsLiveIDAuthenticationModule when a non-fully qualified URL is used which would be the case with
