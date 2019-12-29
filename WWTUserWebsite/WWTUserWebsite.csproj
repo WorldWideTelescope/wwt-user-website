@@ -220,6 +220,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="Content\CSS\wwt.css" />
+    <Content Include="Content\CSS\wwt.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -236,6 +239,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="package.json" />
     <Content Include="Scripts\controls\user.js" />
     <Content Include="Scripts\controls\util.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
