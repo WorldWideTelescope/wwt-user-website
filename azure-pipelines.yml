@@ -47,3 +47,11 @@ steps:
     publishLocation: 'pipeline'
     artifactName: WWTUserWebsite.deploy.cmd
   displayName: Publish sample deployment command artifact
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'aas@wwtadmindotnetfoundation'
+    appType: 'webApp'
+    WebAppName: 'wwtuserstaging'
+    packageForLinux: '$(build.artifactStagingDirectory)\WWTUserWebsite.zip'
