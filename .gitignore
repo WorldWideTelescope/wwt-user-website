@@ -1,6 +1,8 @@
 /.vs/
 /packages/
 /WWTUserWebsite/bin/
+/WWTUserWebsite/node_modules/
 /WWTUserWebsite/obj/
+/WWTUserWebsite/package-lock.json
 /WWTUserWebsite.Tests/bin/
 /WWTUserWebsite.Tests/obj/
