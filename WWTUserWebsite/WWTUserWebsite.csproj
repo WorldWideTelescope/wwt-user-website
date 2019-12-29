@@ -315,6 +315,7 @@
     <Content Include="Views\Use\Tools.cshtml" />
     <Content Include="Views\Use\TourAssets.cshtml" />
     <Content Include="Views\Use\WWTPlanetarium.cshtml" />
+    <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
