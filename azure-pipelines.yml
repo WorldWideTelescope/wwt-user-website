@@ -22,6 +22,12 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'WWTUserWebsite'
+  displayName: NPM install
+
 - task: Grunt@0
   inputs:
     gruntFile: 'WWTUserWebsite\Gruntfile.js'
