@@ -1,5 +1,3 @@
-/// <binding ProjectOpened='watch' />
-
 /**!
    Perform Less -> CSS compilation for the WWT user website.
 **/
