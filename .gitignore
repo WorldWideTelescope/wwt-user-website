@@ -1,6 +1,9 @@
 /.vs/
 /packages/
 /WWTUserWebsite/bin/
+/WWTUserWebsite/Content/CSS/wwt.css
+/WWTUserWebsite/Content/CSS/wwt.css.map
+/WWTUserWebsite/Content/CSS/wwt.min.css
 /WWTUserWebsite/node_modules/
 /WWTUserWebsite/obj/
 /WWTUserWebsite/package-lock.json
