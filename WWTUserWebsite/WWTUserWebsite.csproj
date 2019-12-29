@@ -290,7 +290,6 @@
     <Content Include="Views\Learn\UserGuide.cshtml" />
     <Content Include="Views\Learn\WebDevelopment.cshtml" />
     <Content Include="Views\Learn\WhatsNew.cshtml" />
-    <Content Include="Views\Shared\_CommunityLayout.cshtml" />
     <Content Include="Views\Shared\_ContentPage.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
