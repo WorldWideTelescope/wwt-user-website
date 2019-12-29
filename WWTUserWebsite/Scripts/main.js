@@ -105,10 +105,6 @@ if (top === self) {
 	var returnUrl = location.href.split('?')[0];
 	console.log(returnUrl);
 	return;
-
-	location.href = '/LiveId/AuthenticateFromCode/' + getQSValue('code') +
-	  '?returnUrl=' + encodeURIComponent(returnUrl);
-	return;
       }
 
       var rememberSetting = wwt.user.get('rememberMe');
