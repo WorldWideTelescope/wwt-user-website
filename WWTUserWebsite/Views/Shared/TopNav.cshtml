@@ -31,43 +31,19 @@
           </a>
         </li>
 
-        @if (ConfigurationManager.AppSettings["twitterId"] != "xxx")
-        {
-        // need a valid twitter id
-        <li class="social" style="width: 40px">
-          <a class="social dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+        <li class="social">
+          <a class="social" target="social" href="https://twitter.com/wwtelescope" data-toggle="tooltip"
+             data-placement="bottom" data-title="Connect with us on Twitter">
             <i class="fa fa-twitter text-info" style="margin-top: 4px;"></i>
           </a>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a target="social" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fworldwidetelescope.org%2FHome.aspx&region=follow_link&screen_name=WWTelescope&tw_p=followbutton&variant=2.0" data-toggle="tooltip" data-placement="bottom"
-                 data-title="Follow WWTelescope on Twitter">
-                <i class="fa fa-twitter text-info"></i>
-                Follow WWTelescope on Twitter
-              </a>
-            </li>
-
-            <li>
-              <a target="social" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fworldwidetelescope.org&text=Check%20out%20WorldWide%20Telescope%20-%20the%203D%20universe&tw_p=tweetbutton&url=http%3A%2F%2Fworldwidetelescope.org&via=WWTelescope
-                                       " data-toggle="tooltip" data-placement="bottom"
-                 data-title="Tweet WorldWide Telescope">
-                <i class="fa fa-twitter text-info"></i>
-                Tweet WorldWide Telescope
-              </a>
-            </li>
-          </ul>
-
-          <span class="sep"></span>
         </li>
 
         <li class="social">
-          <a class="social" target="social" href="https://www.facebook.com/WorldWideTelescope" data-toggle="tooltip" data-placement="bottom"
+          <a class="social" target="social" href="https://www.facebook.com/WWTelescope" data-toggle="tooltip" data-placement="bottom"
              data-title="Like us on Facebook">
             <i class="fa fa-facebook text-info" style="margin-top: 4px;"></i>
           </a>
         </li>
-        }
 
         <li class="social" style="padding-left:0;">
           @*Inline styles to enable deploying these changes without other in-flight changes to wwt.less*@
