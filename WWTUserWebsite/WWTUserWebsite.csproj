@@ -297,6 +297,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Global.asax" />
     <Content Include="Gruntfile.js" />
+    <Content Include="images\astronomers.jpg" />
+    <Content Include="images\develop.jpg" />
+    <Content Include="images\educators.jpg" />
+    <Content Include="images\exploreweb.jpg" />
+    <Content Include="images\installwwt.jpg" />
+    <Content Include="images\planetariums.jpg" />
     <Content Include="package.json" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
