@@ -22,8 +22,6 @@
       }, 500);
     }
   },
-
-  failedSigninAttempts: 0
 };
 
 if (top === self) {
@@ -32,7 +30,6 @@ if (top === self) {
       init: init,
       loaded: loaded,
       fullScreenImage: fullScreenImage,
-      signIn:signIn
     };
 
     var isLoaded = false;
@@ -40,17 +37,8 @@ if (top === self) {
     var isSmall = false;
 
     function init() {
-      try {
-	initLiveId();
-      } catch (ex) {
-      }
-
       wwt.resLoc = $('body').attr('resLoc');
       bindEvents();
-
-      var rememberSetting = wwt.user && wwt.user.get('rememberMe');
-
-      wwt.autoSignin = rememberSetting && rememberSetting === true;
 
       resize();
 
@@ -96,56 +84,6 @@ if (top === self) {
       $(window).on('hashchange', hashChange);
       $('img.img-border:not([data-nofs])').on('click', fullScreenImage).attr('title', 'click to view full size');
       $('#accordion').on('click', wwt.accordianClick);
-    }
-
-    function initLiveId() {
-      var signedIn = $('#signinContainer').attr('loggedIn') === 'true';
-
-      if (!signedIn && getQSValue('code') != null) {
-	var returnUrl = location.href.split('?')[0];
-	console.log(returnUrl);
-	return;
-      }
-
-      var rememberSetting = wwt.user.get('rememberMe');
-      var autoSignin = wwt.autoSignin = rememberSetting && rememberSetting === true;
-
-      if (wwt.currentResolution === 'md' || wwt.currentResolution === 'lg') {
-	$('#signinContainer label').slideUp(function() {
-	  $('.sign-in').show();
-	});
-      }
-
-      $('#signinContainer #signin').on('click', signIn);
-
-      if (autoSignin && !signedIn) {
-	signIn();
-      }
-    }
-
-    function signIn() {
-      var signedIn = $('#signinContainer').attr('loggedIn') === 'true';
-
-      if (signedIn || location.host.indexOf('localhost') > -1) {
-	return;
-      }
-
-      wwt.signingIn = true;
-      wwt.user.set('rememberMe', true);
-
-      if (wwt.user.get('authCodeRedirect')) {
-	cleanCookies();
-      }
-
-      wwt.user.set('authCodeRedirect', true);
-
-      var dir = '/home';
-      var redir = 'http://' + location.host + dir;
-      var wlUrl = 'https://login.live.com/oauth20_authorize.srf?client_id=' +
-          _liveClientId + '&scope=wl.offline_access%20wl.emails&response_type=code&redirect_uri=' +
-          encodeURIComponent(redir) + '&display=popup';
-      location.href = wlUrl;
-      return;
     }
 
     var cleanCookies = function() {

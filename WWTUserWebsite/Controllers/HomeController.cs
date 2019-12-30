@@ -14,13 +14,8 @@ namespace WWTUserWebsite.Controllers
     /// </summary>
     public class HomeController : ControllerBase
     {
-        /// <summary>
-        /// Startup Action which is default action rendering the home page. This needs to be added because of the
-        /// issue with WindowsLiveIDAuthenticationModule when a non-fully qualified URL is used which would be the case with
-        /// the default action
-        /// Additional details at http://sharepoint/sites/liveid/wiki/Wiki%20Pages/AuthModPathlessURLs.aspx
-        /// </summary>
-        /// <returns>Redirects to Index action</returns>
+        // This function was necessary to help with issues related to Windows Live logins.
+        // May no longer be necessary?
         public ActionResult Startup()
         {
             return RedirectToAction("Index", "Home");
