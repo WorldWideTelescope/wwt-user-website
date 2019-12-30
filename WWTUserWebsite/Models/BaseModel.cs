@@ -14,7 +14,6 @@ namespace WWTUserWebsite.Models
         private readonly string _resVer;
         private readonly string _downloadUrl;
         private readonly string _legacyUrl;
-        private bool _isOpenWwtKiosk = false;
 
         public BaseModel()
         {
@@ -28,7 +27,6 @@ namespace WWTUserWebsite.Models
             _resVer = ConfigReader<string>.GetSetting("ResourcesVersion");
             _downloadUrl = ConfigReader<string>.GetSetting("WWTDownloadUrl");
             _legacyUrl = ConfigReader<string>.GetSetting("WWTLegacyDownloadUrl");
-            _isOpenWwtKiosk = false;
         }
 
         public string ResLoc
@@ -79,12 +77,6 @@ namespace WWTUserWebsite.Models
         public string LegacyUrl
         {
             get { return _legacyUrl; }
-        }
-
-        public bool IsOpenWwtKiosk
-        {
-            get { return _isOpenWwtKiosk; }
-            set { _isOpenWwtKiosk = value; }
         }
     }
 }
