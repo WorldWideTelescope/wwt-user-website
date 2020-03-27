@@ -224,7 +224,6 @@
     <Content Include="Views\About\WebClient.cshtml" />
     <Content Include="Views\About\WhoWeAre.cshtml" />
     <Content Include="Views\Download\Beta.cshtml" />
-    <Content Include="Views\Download\Embed.cshtml" />
     <Content Include="Views\Download\Features.cshtml" />
     <Content Include="Views\Download\Index.cshtml" />
     <Content Include="Views\Download\LeftNav.cshtml" />
