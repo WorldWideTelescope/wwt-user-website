@@ -15,26 +15,24 @@
 
   <body>
     <header>
-      <div class="maxwidth">
-        <p id="banner"><a href="{{ get_url(path="", trailing_slash=true) | safe }}">AAS WorldWide Telescope</a></p>
-      </div>
+      <nav class="maxwidth">
+        <img class="header-logo" src="{{ get_url(path="assets/stacked-logo.png") | safe }}">
+
+        <div>
+          <ul>
+            <!-- <li><a href="[[ macros__page_url(path="dir/file.md") ]]">Link</a></li> -->
+            <li><a href="{{ get_url(path="", trailing_slash=true) | safe }}">AAS WorldWide Telescope</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <nav id="topnav">
-      <div class="maxwidth">
-        <ul>
-          <!-- <li><a href="[[ macros__page_url(path="dir/file.md") ]]">Link</a></li> -->
-          <li>Nav Item</li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="maxwidth">
+    <main class="maxwidth">
       <div class="content">
         {% block content %}
         {% endblock content %}
       </div>
-    </div>
+    </main>
 
     <footer>
       <div class="maxwidth">

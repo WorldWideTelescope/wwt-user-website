@@ -37,6 +37,8 @@ $break-small: 36em;
 // Top-level setup
 
 html {
+  height: 100%;
+
   // Default font sizes are too small, I think. At a standard 1em = 16px,
   // 1.375em becomes 22px.
   font-size: 1.375em;
@@ -47,6 +49,12 @@ html {
   // pages. There are a few ways to try to deal with this, but here I
   // just force there to always be a scrollbar.
   overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  line-height: 1.6;
 }
 
 // Styling for generic Markdown. I want Markdown-derived HTML to look
@@ -138,11 +146,48 @@ figcaption {
 
 // Page layout. Thus far, this has ended up being extremely simple! Yay.
 
-div.maxwidth {
-  max-width: 32rem;
+.maxwidth {
+  max-width: 42rem;
   padding: 0 1.5rem 0 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+// Header.
+
+header {
+  background: #f6f7fa;
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+
+    div {
+      display: flex;
+      flex-basis: auto;
+      flex-grow: 1;
+      align-items: center;
+
+      ul {
+        list-style: none;
+        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        margin: 0 0 0 auto;
+        padding: 0;
+
+        li {
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+.header-logo {
+  display: block;
+  width: 220px;
+  margin: 8px;
 }
 
 // The universal footer. The structure is `footer > div.maxwidth > p`.
