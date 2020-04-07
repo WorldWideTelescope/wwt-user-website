@@ -1,0 +1,46 @@
+{%- import "macros.html" as macros -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>{% block title %}AAS WorldWide Telescope{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ get_url(path="sanitize.css") | safe }}">
+    <link rel="stylesheet" href="{{ get_url(path="style.css") | safe }}">
+    <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    {% block extra_head %}
+    {% endblock extra_head %}
+  </head>
+
+  <body>
+    <header>
+      <div class="maxwidth">
+        <p id="banner"><a href="{{ get_url(path="", trailing_slash=true) | safe }}">AAS WorldWide Telescope</a></p>
+      </div>
+    </header>
+
+    <nav id="topnav">
+      <div class="maxwidth">
+        <ul>
+          <!-- <li><a href="[[ macros__page_url(path="dir/file.md") ]]">Link</a></li> -->
+          <li>Nav Item</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="maxwidth">
+      <div class="content">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
+
+    <footer>
+      <div class="maxwidth">
+        <p>Copyright {{ now() | date(format="%Y") }} AAS. Site generated
+          with <a href="https://www.getzola.org/">Zola</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

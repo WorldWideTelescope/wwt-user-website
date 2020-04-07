@@ -1,0 +1,4 @@
+{%- macro page_url(path) -%}
+{%- set page = get_page(path=path) -%}
+{{ page.permalink | safe }}
+{%- endmacro input -%}
