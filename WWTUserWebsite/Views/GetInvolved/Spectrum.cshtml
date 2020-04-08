@@ -1,11 +1,19 @@
 ﻿@{
   Layout = "~/Views/Shared/_ContentPage.cshtml";
+  ViewBag.sdkUrl = Model.ResLoc + "/html5sdk/wwtsdk" + (Request.QueryString["debug"] == null ? ".min" : "") + ".js";
 }
 
 @section leftnav {
   @Html.Partial("~/Views/GetInvolved/LeftNav.cshtml")
 }
 
+<script src="@ViewBag.sdkUrl"></script>
+<script src="@Model.JsDir/controls/WebControl.js?v=@Model.ResVer"></script>
+<script src="@Model.JsDir/controls/TourPlayer.js?v=@Model.ResVer"></script>
+<script src="@Model.JsDir/controls/move.js?v=@Model.ResVer"></script>
+<script src="@Model.JsDir/controls/pinch.js?v=@Model.ResVer"></script>
+<script src="@Model.JsDir/controls/util.js?v=@Model.ResVer"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
 <script src="@Model.JsDir/pages/Spectroscopy.js?v=@Model.ResVer"></script>
 
 <script>
