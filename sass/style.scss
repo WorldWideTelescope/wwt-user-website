@@ -171,7 +171,7 @@ figcaption {
 
 .maxwidth {
   max-width: 42rem;
-  padding: 0;
+  padding: 0 4px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -217,10 +217,23 @@ header {
   }
 }
 
-.header-logo {
+.header-logo-lg {
   display: block;
   width: 260px;
   margin: 8px 0;
+
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.header-logo-sm {
+  display: none;
+  margin: 8px 0;
+
+  @media screen and (max-width: $break-small) {
+    display: block;
+  }
 }
 
 // The universal footer. The structure is `footer > div.maxwidth > p`.
@@ -233,7 +246,7 @@ footer {
 
   div.maxwidth {
     border-top: 1px solid #222;
-    padding: 0.3rem 0;
+    padding: 0.3rem 4px;
   }
 
   p {
