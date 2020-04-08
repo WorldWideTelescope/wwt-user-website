@@ -1,8 +1,5 @@
 // SASS variables, mixins, etc.
 
-$light-color: rgb(247, 245, 231);
-$dark-color: #290066;
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -55,6 +52,9 @@ body {
   margin: 0;
   height: 100%;
   line-height: 1.6;
+
+  background: #0a0429;
+  color: #f0f0f0;
 }
 
 // Styling for generic Markdown. I want Markdown-derived HTML to look
@@ -95,7 +95,11 @@ hr {
 }
 
 a {
-  color: $dark-color;
+  color: #e0e3f4;
+}
+
+a:hover {
+  color: #fefefe;
 }
 
 h1 {
@@ -156,7 +160,8 @@ figcaption {
 // Header.
 
 header {
-  background: #f6f7fa;
+  background: #10043e;
+  border-bottom: 1px solid #222;
 
   nav {
     display: flex;
@@ -178,6 +183,14 @@ header {
 
         li {
           margin: 0 0.2rem;
+
+          a {
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: #fff;
+          }
         }
       }
     }
@@ -186,14 +199,13 @@ header {
 
 .header-logo {
   display: block;
-  width: 220px;
-  margin: 8px;
+  width: 260px;
+  margin: 8px 0;
 }
 
 // The universal footer. The structure is `footer > div.maxwidth > p`.
 
 footer {
-  background-color: $light-color;
   width: 100%;
   clear: both;
   font-size: 60%;
@@ -235,4 +247,15 @@ h4:hover a.zola-anchor,
 h5:hover a.zola-anchor,
 h6:hover a.zola-anchor {
   visibility: visible;
+}
+
+// Hero image on the main landing page
+
+div.hero {
+  background-image: url("/assets/img19028-cropped.jpg");
+  font-size: 1.5em;
+
+  p {
+    padding: 1rem 0;
+  }
 }
