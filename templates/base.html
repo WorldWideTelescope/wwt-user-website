@@ -22,8 +22,7 @@
 
         <div>
           <ul>
-            <!-- <li><a href="[[ macros__page_url(path="dir/file.md") ]]">Link</a></li> -->
-            <li><a href="{{ get_url(path="", trailing_slash=true) | safe }}">Topnav Link</a></li>
+            <li><a href="{{ macros::page_url(path='about.md', trailing_slash=true)}}">About</a></li>
           </ul>
         </div>
       </nav>

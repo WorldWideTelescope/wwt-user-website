@@ -1,14 +1,9 @@
-# The URL the site will be built for
 base_url = "https://worldwidetelescope.org"
-
-# Whether to automatically compile all Sass files in the sass directory
+title = "AAS WorldWide Telescope"
+description = "AAS WorldWide Telescope is a tool for showcasing astronomical data and knowledge."
+default_language = "en"
 compile_sass = true
-
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
 [extra]

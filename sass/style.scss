@@ -8,13 +8,17 @@
 }
 
 @font-face {
-  font-family: UniversLTPro-45Light;
+  font-family: "UniversLTPro";
   src: url("/assets/39762C_0_0.eot?#iefix") format("embedded-opentype"), url("/assets/39762C_0_0.woff2") format("woff2"), url("/assets/39762C_0_0.woff") format("woff"), url("/assets/39762C_0_0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: UniversLTPro-65Bold;
+  font-family: "UniversLTPro";
   src: url("/assets/39762C_2_0.eot?#iefix") format("embedded-opentype"), url("/assets/39762C_2_0.woff2") format("woff2"), url("/assets/39762C_2_0.woff") format("woff"), url("/assets/39762C_2_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 // Breakpoints for responsive CSS media queries. For reference, Boostrap uses:
@@ -39,7 +43,7 @@ html {
   // Default font sizes are too small, I think. At a standard 1em = 16px,
   // 1.375em becomes 22px.
   font-size: 1.375em;
-  font-family: "UniversLTPro-45Light";
+  font-family: "UniversLTPro";
 
   // The viewport width changes slightly if there's a scrollbar or now,
   // causing the layout to shift when navigating between long and short
@@ -96,23 +100,38 @@ hr {
 
 a {
   color: #e0e3f4;
+
+  &:hover {
+    color: #fefefe;
+  }
 }
 
-a:hover {
-  color: #fefefe;
+.page-title {
+  font-size: 150%;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 1.2rem 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #fff;
+  }
 }
 
 h1 {
-  // Keep this smaller than `.post-title`
+  // Keep this smaller than `.page-title`
   font-size: 125%;
-
-  margin: 1em 0 0.3em 0;
+  margin: 1.2rem 0 1rem 0;
 }
 
 h2 {
   // Looks like we need to manually specify these font sizes to cascade down
   // relative to h1.
   font-size: 110%;
+  margin: 1.2rem 0 1rem 0;
 }
 
 h3, h4, h5, h6 {
@@ -152,7 +171,7 @@ figcaption {
 
 .maxwidth {
   max-width: 42rem;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -183,6 +202,7 @@ header {
 
         li {
           margin: 0 0.2rem;
+          font-weight: 700;
 
           a {
             text-decoration: none;
@@ -209,8 +229,12 @@ footer {
   width: 100%;
   clear: both;
   font-size: 60%;
-  margin: 1rem 0 0 0;
-  padding: 0.3rem 0 0.3rem 0;
+  margin: 2rem 0 0 0;
+
+  div.maxwidth {
+    border-top: 1px solid #222;
+    padding: 0.3rem 0;
+  }
 
   p {
     margin: 0;
