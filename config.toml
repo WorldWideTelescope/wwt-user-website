@@ -6,5 +6,8 @@ compile_sass = true
 highlight_code = true
 build_search_index = false
 
+[slugify]
+paths = "safe"  # Preserve capitalization
+
 [extra]
 # Put all your custom variables here
