@@ -54,6 +54,7 @@ ASP.NET MVC5 application on the fly.
 - /fonts/ — *static*
 - /GetInvolved/
 - /Home
+- /images/ — **note** served by `wwtwebstatic` backend, not `wwtuserstaging`
 - /Learn/
 - /Scripts/ — *static*
 - /Support/
