@@ -106,19 +106,15 @@ a {
   }
 }
 
+a.noul {
+  text-decoration: none;
+}
+
 .page-title {
   font-size: 150%;
   font-weight: 700;
   line-height: 1;
   margin: 0 0 1.2rem 0;
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #fff;
-  }
 }
 
 h1 {
@@ -171,7 +167,7 @@ figcaption {
 
 .maxwidth {
   max-width: 42rem;
-  padding: 0 4px;
+  padding: 0 8px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -203,14 +199,6 @@ header {
         li {
           margin: 0 0.2rem;
           font-weight: 700;
-
-          a {
-            text-decoration: none;
-          }
-
-          a:hover {
-            color: #fff;
-          }
         }
       }
     }
@@ -246,7 +234,7 @@ footer {
 
   div.maxwidth {
     border-top: 1px solid #222;
-    padding: 0.3rem 4px;
+    padding: 0.3rem 8px;
   }
 
   p {
@@ -290,9 +278,31 @@ h6:hover a.zola-anchor {
 
 div.hero {
   background-image: url("/assets/img19028-cropped.jpg");
+  background-size: cover;
+  background-position: top right;
   font-size: 1.5em;
 
-  p {
-    padding: 1rem 0;
+  div.maxwidth {
+    position: relative; // to allow the button positioning
+
+    p {
+      padding: 1rem 0;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 0.4rem;
+      right: 0.4rem;
+      padding: 0.2rem 0.3rem;
+      border: double #fff 2px;
+      font-size: 50%;
+      font-weight: 700;
+
+      @include border-radius(4px);
+
+      &:hover {
+        background: #Fc2151;
+      }
+    }
   }
 }
