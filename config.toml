@@ -10,4 +10,4 @@ build_search_index = false
 paths = "safe"  # Preserve capitalization
 
 [extra]
-# Put all your custom variables here
+google_analytics_id = "UA-107473046-3"

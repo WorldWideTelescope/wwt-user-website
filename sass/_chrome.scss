@@ -1,0 +1,84 @@
+// Styles for the generic elements included in every page through the templates.
+
+body {
+  color: $foreground-color;
+  background-color: $background-color;
+}
+
+header {
+  background-color: $header-bg-color;
+  border-bottom: 1px solid $edge-color;
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+
+    div {
+      display: flex;
+      flex-basis: auto;
+      flex-grow: 1;
+      align-items: center;
+
+      ul {
+        list-style: none;
+        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        margin: 0 0 0 auto;
+        padding: 0;
+
+        li {
+          margin: 0 0.2rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.header-logo-lg {
+  display: block;
+  width: 260px;
+  margin: 8px 0;
+
+  @media screen and (max-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.header-logo-sm {
+  display: none;
+  margin: 8px 0;
+
+  @media screen and (max-width: $breakpoint) {
+    display: block;
+  }
+}
+
+footer {
+  font-size: 80%;
+  border-top: 1px solid $edge-color;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: auto;
+  align-items: center;
+
+  p {
+    flex-grow: 1;
+  }
+
+  a.footer-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    font-size: 20px;
+    padding: 0;
+
+    color: $foreground-color;
+
+    i {
+      margin: 0;
+    }
+  }
+}

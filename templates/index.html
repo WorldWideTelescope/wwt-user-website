@@ -1,11 +1,6 @@
 {% extends "base.html" %}
 
-{% block extra_head %}
-<link rel="alternate" type="application/rss+xml" title="WWT Feed" href="{{ get_url(path="rss.xml") | safe }}" />
-{% endblock extra_head %}
-
-{% block override_content %}
-
+{% block before_main_content %}
 <div class="hero">
   <div class="maxwidth">
     <p><b>AAS WorldWide Telescope is a tool for showcasing astronomical data
@@ -15,7 +10,9 @@
     <a class="noul" href="/webclient/"><div class="button">Launch the Web Client!</div></a>
   </div>
 </div>
+{% endblock before_main_content %}
 
+{% block content %}
 <main class="maxwidth">
   <p>WWT is brought to you by the
     non-profit <a href="https://aas.org/">American Astronomical Society</a>
@@ -29,5 +26,4 @@
     Foundation</a>,
     and <a href="https://www.microsoft.com/">Microsoft</a>.</p>
 </main>
-
-{% endblock override_content %}
+{% endblock content %}

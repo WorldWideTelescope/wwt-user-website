@@ -1,0 +1,33 @@
+// Hero image on the main landing page
+
+div.hero {
+  background-image: url("/assets/img19028-cropped.jpg");
+  background-size: cover;
+  background-position: top right;
+  font-size: 1.5em;
+
+  div.maxwidth {
+    position: relative; // to allow the button positioning
+
+    p {
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 0.4rem;
+      right: 0.4rem;
+      padding: 0.2rem 0.3rem;
+      border: double #fff 2px;
+      font-size: 50%;
+      font-weight: 700;
+
+      @include border-radius(4px);
+
+      &:hover {
+        background: #Fc2151;
+      }
+    }
+  }
+}
