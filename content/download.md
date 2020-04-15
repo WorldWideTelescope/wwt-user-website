@@ -23,7 +23,7 @@ WorldWide Telescope 6.0 Beta is the latest version of AAS WorldWide Telescope
 (WWT). This feature-rich application is now available to everyone as a free
 download.
 
-<p class="big-button"><a href="https://wwtweb.blob.core.windows.net/drops/wwtsetup.6.0.11.msi">Download WWT 6.0.11 Beta</a></p>
+{{ bigbutton(text="Download WWT 6.0.11 Beta", url="https://wwtweb.blob.core.windows.net/drops/wwtsetup.6.0.11.msi") }}
 
 WWT 6.0 Beta runs on Windows 7/8/8.1/10, in either 32- or 64-bit mode,
 depending on your operating system. It also supports native DirectX 11,
@@ -54,7 +54,7 @@ can potentially prevent the legacy version from running.
 WorldWide Telescope 5.5 is the most recent stable version of AAS WorldWide
 Telescope (WWT).
 
-<p class="big-button"><a href="https://wwtweb.blob.core.windows.net/drops/WWTSetup.5.5.03.msi">Download WWT 5.5.03</a></p>
+{{ bigbutton(text="Download WWT 5.5.03", url="https://wwtweb.blob.core.windows.net/drops/WWTSetup.5.5.03.msi") }}
 
 WWT 5.5 runs on Windows 7/8/8.1/10, in either 32- or 64-bit mode, depending on
 your operating system. It also supports native DirectX 11, DirectX 10, and has

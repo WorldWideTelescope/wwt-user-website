@@ -40,7 +40,7 @@ always email the AAS WWT staff at <wwt@aas.org>.
 We strive to maintain a regular schedule of in-person WWT events. Check out
 the calendar of upcoming happenings at the [WWT Contributor Hub][events]:
 
-<p class="big-button"><a href="https://worldwidetelescope.github.io/events/">See the Event Calendar</a></p>
+{{ bigbutton(text="See the Event Calendar", url="https://worldwidetelescope.github.io/events/") }}
 
 [events]: https://worldwidetelescope.github.io/events/
 
