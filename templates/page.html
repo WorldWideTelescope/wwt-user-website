@@ -4,7 +4,14 @@
 {{ config.title }}: {{ page.title }}
 {%- endblock title -%}
 
+{% block full_width_content %}
+<div class="hero {{page.extra.titlebox_class}}">
+  <div class="maxwidth">
+    <span class="page-title">{{ page.title }}</span>
+  </div>
+</div>
+{% endblock full_width_content %}
+
 {% block content %}
-<p class="page-title"><a class="noul" href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
 {{ page.content | safe }}
 {% endblock content %}

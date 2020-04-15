@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
-{% block before_main_content %}
-<div class="hero">
+{% block full_width_content %}
+<div class="hero background-19028">
   <div class="maxwidth">
     <p><b>AAS WorldWide Telescope is a tool for showcasing astronomical data
         and knowledge.</b> It’s not a physical telescope — it’s open-source
@@ -12,20 +12,8 @@
     </div>
   </div>
 </div>
-{% endblock before_main_content %}
+{% endblock full_width_content %}
 
 {% block content %}
-<main class="maxwidth">
-  <p>WWT is brought to you by the
-    non-profit <a href="https://aas.org/">American Astronomical Society</a>
-    (AAS), the major organization of professional astronomers in North America
-    and the publisher of <a href="https://skyandtelescope.org/">Sky &amp;
-    Telescope</a> magazine. WWT’s hosting is supported by
-    the <a href="https://dotnetfoundation.org/">.NET Foundation</a> and the
-    WWT project has been supported by
-    the <a href="https://www.nsf.gov/">National Science Foundation</a>,
-    the <a href="https://www.moore.org/">Gordon and Betty Moore
-    Foundation</a>,
-    and <a href="https://www.microsoft.com/">Microsoft</a>.</p>
-</main>
+{{ section.content | safe }}
 {% endblock content %}

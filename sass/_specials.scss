@@ -1,9 +1,18 @@
-// Hero image on the main landing page
+// Various special and one-off effects.
 
-div.hero {
+.background-19028 {
   background-image: url("assets/img19028-cropped.jpg");
   background-size: cover;
   background-position: top right;
+}
+
+.background-19036 {
+  background-image: url("assets/img19036-cropped.jpg");
+  background-size: cover;
+  background-position: top right;
+}
+
+div.hero {
   font-size: 1.5em;
 
   div.maxwidth {

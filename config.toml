@@ -1,4 +1,4 @@
-base_url = "https://worldwidetelescope.org"
+base_url = "//worldwidetelescope.org/"
 title = "AAS WorldWide Telescope"
 description = "AAS WorldWide Telescope is a tool for showcasing astronomical data and knowledge."
 default_language = "en"
@@ -10,4 +10,4 @@ build_search_index = false
 paths = "safe"  # Preserve capitalization
 
 [extra]
-google_analytics_id = "UA-107473046-3"
+google_analytics_id = "UA-107473046-1"

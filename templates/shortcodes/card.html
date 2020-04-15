@@ -1,0 +1,13 @@
+<div class="flex-card">
+  <p>
+    {% if html %}
+      {{body | safe}}
+    {% else %}
+      {{body}}
+    {% endif %}
+  </p>
+
+  <div class="button">
+    <a href="{{url}}">{{text}}</a>
+  </div>
+</div>

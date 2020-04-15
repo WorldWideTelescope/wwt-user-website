@@ -1,6 +1,10 @@
 +++
 date = 2020-04-07
 title = "About AAS WorldWide Telescope"
+aliases = ["About"]
+
+[extra]
+titlebox_class = "background-19036"
 +++
 
 The purpose of the American Astronomical Society's WorldWide Telescope project
