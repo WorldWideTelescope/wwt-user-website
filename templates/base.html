@@ -83,23 +83,35 @@
       </main>
 
       <footer>
-        <p>Copyright {{ now() | date(format="%Y") }}
-          <a href="https://aas.org/">AAS</a>. HTML generated
-          with <a href="https://www.getzola.org/">Zola</a>.
-          <a href="{{ config.extra.github_url | safe }}">Source code</a>.
-        </p>
+        <div id="footer-top">
+          <p>Copyright {{ now() | date(format="%Y") }}
+            <a href="https://aas.org/">AAS</a>. HTML generated
+            with <a href="https://www.getzola.org/">Zola</a>.
+            <a href="{{ config.extra.github_url | safe }}">Source code</a>.
+          </p>
 
-        <a class="footer-icon" href="{{config.extra.twitter_url | safe}}" title="Twitter" aria-label="Twitter">
-          <i class="fa fa-twitter"></i>
-        </a>
+          <a class="footer-icon" href="{{config.extra.twitter_url | safe}}" title="Twitter" aria-label="Twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
 
-        <a class="footer-icon" href="{{config.extra.github_url | safe}}" title="Git repository" aria-label="Git repository">
-          <i class="fa fa-github"></i>
-        </a>
+          <a class="footer-icon" href="{{config.extra.github_url | safe}}" title="Git repository" aria-label="Git repository">
+            <i class="fa fa-github"></i>
+          </a>
 
-        <a class="footer-icon" href="{{config.extra.facebook_url | safe}}" title="Facebook" aria-label="Facebook">
-          <i class="fa fa-facebook"></i>
-        </a>
+          <a class="footer-icon" href="{{config.extra.facebook_url | safe}}" title="Facebook" aria-label="Facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+
+        <p id="footer-logo-text">The AAS WorldWide Telescope project has been supported by:</p>
+
+        <div id="logos">
+          <img class="footer-logo" src="{{ rel_top ~ 'assets/aas-publishing-71582561158855.png' }}">
+          <img class="footer-logo" src="{{ rel_top ~ 'assets/nsf-sprite-extracted.png' }}">
+          <img class="footer-logo" src="{{ rel_top ~ 'assets/dotnetfoundationhorizontal.svg' }}" style="background-color: #fff">
+          <img class="footer-logo" src="{{ rel_top ~ 'assets/moore-logo-white.png' }}">
+          <img class="footer-logo" src="{{ rel_top ~ 'assets/microsoft-dark.png' }}">
+        </div>
       </footer>
     </div>
   </body>

@@ -143,27 +143,57 @@ header {
 footer {
   font-size: 80%;
   border-top: 1px solid $edge-color;
-  display: flex;
-  flex-flow: row nowrap;
-  flex-basis: auto;
-  align-items: center;
+  color: $muted-color;
 
-  p {
-    flex-grow: 1;
+  a {
+    color: $muted-color;
+
+    &:hover {
+      color: $muted-hover-color;
+    }
   }
 
-  a.footer-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin: 0 4px;
-    font-size: 20px;
-    padding: 0;
+  #footer-top {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: auto;
+    align-items: center;
 
-    color: $foreground-color;
+    p {
+      flex-grow: 1;
+    }
 
-    i {
-      margin: 0;
+    a.footer-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 0 4px;
+      font-size: 20px;
+      padding: 0;
+
+      i {
+        margin: 0;
+      }
+    }
+  }
+
+  #footer-logo-text {
+    width: 100%;
+    margin: 0.8rem 0 0.2rem 0;
+    text-align: center;
+    font-style: italic;
+  }
+
+  #logos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      margin: 0.2rem 1rem;
+      padding: 2px;
+      height: 48px;
     }
   }
 }
