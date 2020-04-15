@@ -12,47 +12,128 @@ header {
   nav {
     display: flex;
     flex-flow: row nowrap;
+  }
+}
 
-    div {
-      display: flex;
-      flex-basis: auto;
-      flex-grow: 1;
-      align-items: center;
+// structure: div#topnav > ul > li.nav-dropdown-container > a + ul.nav-dropdown > li
 
-      ul {
-        list-style: none;
-        flex-direction: row;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        margin: 0 0 0 auto;
-        padding: 0;
+#topnav {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
 
-        li {
-          margin: 0 0.2rem;
-          font-weight: 700;
-        }
+  ul {
+    display: block;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+    font-size: 85%;
+
+    a {
+      text-decoration: none;
+      color: $text-link-color;
+
+      &:hover {
+        color: $text-link-hover-color;
       }
+    }
+
+    li {
+      margin: 0 0.5rem;
+      //font-weight: 700;
+      display: inline-block;
+      position: relative;
+    }
+
+    .nav-dropdown-container {
+      a {
+        margin-right: 0.3rem;
+      }
+
+      i {
+        margin-left: 2px;
+      }
+    }
+
+    .nav-link {
+      cursor: pointer;
+    }
+
+    .nav-dropdown {
+      display: none;
+      z-index: 100;
+
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow-y: auto;
+      position: absolute;
+      margin-left: -0.4rem;
+      top: 100%;
+
+      padding: 0.5rem 0.8rem;
+      border: 1px solid $overlay-edge-color;
+      background-color: $header-bg-color;
+      opacity: 0.93;
+
+      li {
+        display: block;
+      }
+    }
+
+    .nav-dropdown-container:hover .nav-dropdown, .nav-dropdown:hover {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    // All the fun for the stacked mobile version of the nav menu.
+
+    #mobile-nav-menu-button {
+      display: block;
+      font-size: 150%;
+      margin: 0 0 0 auto;
+      cursor: pointer;
+    }
+
+    > ul {
+      display: none;
+      position: absolute;
+      top: 80px; // this is the header height
+      right: 0.2rem;
+      background-color: $header-bg-color;
+      border: 1px solid $overlay-edge-color;
+      z-index: 100;
+
+      li {
+        display: block;
+      }
+
+      .nav-link {
+        cursor: inherit;
+      }
+
+      .nav-dropdown {
+        display: block;
+        position: inherit;
+        border: none;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .nav-dropdown-container i {
+        display: none;
+      }
+    }
+
+    #mobile-nav-menu-button:hover + ul, ul:hover {
+      display: block;
     }
   }
 }
 
-.header-logo-lg {
-  display: block;
-  width: 260px;
+.header-logo {
   margin: 8px 0;
-
-  @media screen and (max-width: $breakpoint) {
-    display: none;
-  }
-}
-
-.header-logo-sm {
-  display: none;
-  margin: 8px 0;
-
-  @media screen and (max-width: $breakpoint) {
-    display: block;
-  }
 }
 
 footer {
