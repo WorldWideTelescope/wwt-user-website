@@ -38,7 +38,7 @@
   <body>
     <header>
       <nav class="maxwidth">
-        <a href="{{ get_url(path="", trailing_slash=true) | safe }}">
+        <a href="{{ macros::page_url(rel_top=rel_top, path='home.md') }}">
           <img class="header-logo" src="{{ rel_top ~ 'assets/wwt-globe.png' | safe }}">
         </a>
 
@@ -49,7 +49,7 @@
             <li class="nav-dropdown-container">
               <a class="nav-link">About</a><i class="fa fa-caret-down"></i>
               <ul class="nav-dropdown">
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='about.md')}}">About 1</a></li>
+                <li><a href="{{ macros::page_url(rel_top=rel_top, path='about.md') }}">About 1</a></li>
                 <li><a href="#">About 2</a></li>
                 <li><a href="#">About 3</a></li>
               </ul>
@@ -64,7 +64,7 @@
             </li><li>
               <a href="">Learn More</a>
             </li><li>
-              <a href="{{ macros::page_url(rel_top=rel_top, path='download.md')}}">Download</a>
+              <a href="{{ macros::page_url(rel_top=rel_top, path='download.md') }}">Download</a>
             </li><li>
               <a href="">Connect</a>
             </li>

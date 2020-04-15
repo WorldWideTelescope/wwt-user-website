@@ -1,4 +1,4 @@
-base_url = "//worldwidetelescope.org/"
+base_url = "."
 title = "AAS WorldWide Telescope"
 description = "AAS WorldWide Telescope is a tool for showcasing astronomical data and knowledge."
 default_language = "en"
