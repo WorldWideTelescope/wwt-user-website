@@ -118,7 +118,7 @@ Released in 2015, the WWT Software Development Kit (SDK) and Academic
 Development Kit (ADK) provided a framework for the development of
 WWT-compatible software on the Windows/.NET platform. It is not recommended
 for use anymore — consult
-[the WWT software documentation](https://docs.worldwidetelescope.org/#developing-wwt-based-software)
-to learn about modern WWT software development ecosystem.
+[the WWT documentation hub](https://docs.worldwidetelescope.org/) to learn
+about the modern ecosystem for WWT data processing and software development.
 
 - [Download the 2015 SDK/ADK](https://wwtweb.blob.core.windows.net/drops/WWTSDK.msi)
