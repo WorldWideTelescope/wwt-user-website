@@ -13,4 +13,5 @@ paths = "safe"  # Preserve capitalization
 github_url = "https://github.com/WorldWideTelescope/wwt-user-website"
 twitter_url = "https://twitter.com/wwtelescope"
 facebook_url = "https://facebook.com/wwtelescope"
+youtube_url = "https://www.youtube.com/c/AASWorldWideTelescope"
 google_analytics_id = "UA-107473046-1"
