@@ -15,7 +15,7 @@ at the [Center for Astrophysics | Harvard & Smithsonian][cfa] that uses WWT to
 transform classroom astronomy education:
 
 [ambassadors]: https://wwtambassadors.org/
-[cfa]: https://cfa.harvard.edu/
+[cfa]: https://www.cfa.harvard.edu/
 
 {{ bigbutton(text="Go to the WWTA homepage", url="https://wwtambassadors.org/") }}
 
