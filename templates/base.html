@@ -83,8 +83,23 @@
       </main>
 
       <footer>
-        <p>Copyright {{ now() | date(format="%Y") }} AAS. HTML generated
-          with <a href="https://www.getzola.org/">Zola</a>.</p>
+        <p>Copyright {{ now() | date(format="%Y") }}
+          <a href="https://aas.org/">AAS</a>. HTML generated
+          with <a href="https://www.getzola.org/">Zola</a>.
+          <a href="{{ config.extra.github_url | safe }}">Source code</a>.
+        </p>
+
+        <a class="footer-icon" href="{{config.extra.twitter_url | safe}}" title="Twitter" aria-label="Twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+
+        <a class="footer-icon" href="{{config.extra.github_url | safe}}" title="Git repository" aria-label="Git repository">
+          <i class="fa fa-github"></i>
+        </a>
+
+        <a class="footer-icon" href="{{config.extra.facebook_url | safe}}" title="Facebook" aria-label="Facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
       </footer>
     </div>
   </body>

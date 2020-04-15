@@ -10,4 +10,7 @@ build_search_index = false
 paths = "safe"  # Preserve capitalization
 
 [extra]
+github_url = "https://github.com/WorldWideTelescope/wwt-user-website"
+twitter_url = "https://twitter.com/wwtelescope"
+facebook_url = "https://facebook.com/wwtelescope"
 google_analytics_id = "UA-107473046-1"
