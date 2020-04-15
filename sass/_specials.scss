@@ -10,23 +10,29 @@ div.hero {
     position: relative; // to allow the button positioning
 
     p {
-      margin: 0;
-      padding: 1rem 0;
+      margin: 1rem 0 0 0;
+      line-height: 1.2;
     }
 
-    .button {
-      position: absolute;
-      bottom: 0.4rem;
-      right: 0.4rem;
-      padding: 0.2rem 0.3rem;
-      border: double #fff 2px;
-      font-size: 50%;
-      font-weight: 700;
+    .button-container {
+      display: flex;
+      justify-content: right;
 
-      @include border-radius(4px);
+      a {
+        display: inline-block;
+        margin: 0.3rem;
 
-      &:hover {
-        background: #Fc2151;
+        padding: 0.2rem 0.3rem;
+        border: double #fff 2px;
+        font-size: 50%;
+        font-weight: 700;
+        text-decoration: none;
+
+        @include border-radius(4px);
+
+        &:hover {
+          background: #Fc2151;
+        }
       }
     }
   }

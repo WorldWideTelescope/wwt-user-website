@@ -23,6 +23,10 @@ header {
   flex-grow: 1;
   align-items: center;
 
+  #mobile-nav-menu-button {
+    display: none;
+  }
+
   ul {
     display: block;
     list-style: none;
