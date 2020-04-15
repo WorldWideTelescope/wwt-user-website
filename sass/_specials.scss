@@ -1,13 +1,19 @@
 // Various special and one-off effects.
 
-.background-19028 {
-  background-image: url("assets/img19028-cropped.jpg");
+.background-19028 { // homepage hero
+  background-image: url("assets/img19028-cropped-2006x704.jpg");
   background-size: cover;
   background-position: top right;
 }
 
+.background-19025 {
+  background-image: url("assets/img19025-cropped-1960x256.jpg");
+  background-size: cover;
+  background-position: top left;
+}
+
 .background-19036 {
-  background-image: url("assets/img19036-cropped.jpg");
+  background-image: url("assets/img19036-cropped-1960x256.jpg");
   background-size: cover;
   background-position: top right;
 }
