@@ -66,6 +66,24 @@ body {
     line-height: 1;
   }
 
+  // Embeds
+
+  .youtube-embed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 1rem 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   // We configure Zola to insert anchor links for headers in the Markdown.
   // These show up as `a.zola-anchor` tags inside the <hN> tag to the left
   // of the header text.
@@ -147,6 +165,7 @@ body {
       margin: 0.3rem auto;
       padding: 0.2rem;
 
+      font-weight: 700;
       text-decoration: none;
       background-color: $card-button-color;
       color: $card-button-link-color;

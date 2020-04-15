@@ -1,6 +1,5 @@
 +++
 title = "AAS WorldWide Telescope"
-insert_anchor_links = "right"
 template = "homepage.html"
 aliases = ["/Home"]
 +++
