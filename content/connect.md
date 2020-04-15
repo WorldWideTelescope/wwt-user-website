@@ -13,12 +13,12 @@ strives to be welcoming and inclusive.
 <section class="flex-cards">
 
 {% card(text="Visit the forum", url="https://wwt-forum.org/", html=1) %}
-Connect with WWT users, ask questions, and see the latest news on the <b>WWT
-Forum</b> website.
+Connect with WWT users, ask questions, and see the latest news at the online
+<b>WWT Forum</b>.
 {% end %}
 
 {% card(text="Sign up", url="https://bit.ly/wwt-signup", html=1) %}
-Stay in touch by signing up to receive the occasional <b>WorldWide Telescope
+Stay in touch by signing up to receive the occasional <b>AAS WorldWide Telescope
 Newsletter</b>.
 {% end %}
 
