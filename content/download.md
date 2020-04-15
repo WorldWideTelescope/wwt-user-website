@@ -17,7 +17,7 @@ You don’t need to download anything to start using AAS WorldWide Telescope
 </section>
 
 
-# AAS WorldWide Telescope 6.0 Beta for Windows
+# AAS WorldWide Telescope 6.0 Beta for Windows {#windows-client}
 
 WorldWide Telescope 6.0 Beta is the latest version of AAS WorldWide Telescope
 (WWT). This feature-rich application is now available to everyone as a free
@@ -80,7 +80,7 @@ Do not attempt to install WWT 5.0 or higher on Windows XP. It will not run and
 can potentially prevent the legacy version from running.
 
 
-# WWT Remote Control
+# WWT Remote Control {#remote-control}
 
 The WWT Remote Control utility assists with remotely operating the
 application, especially in cluster environments as found in planetariums.
@@ -89,7 +89,7 @@ application, especially in cluster environments as found in planetariums.
 - [Download WWTRemote 2.1.1 Legacy](http://wwtweb.blob.core.windows.net/drops/WWTRemote.2.1.1.msi)
 
 
-# WWT Add-in for Excel
+# WWT Add-in for Excel {#excel-addin}
 
 The WWT Excel add-in enables you to use the familiar capabilities of Microsoft
 Excel to efficiently highlight, organize, and import your data into the
