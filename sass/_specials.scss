@@ -1,7 +1,13 @@
 // Various special and one-off effects.
 
-.background-19028 { // homepage hero
+.background-19028 { // homepage hero -- bigger than title backgrounds
   background-image: url("assets/img19028-cropped-2006x704.jpg");
+  background-size: cover;
+  background-position: top right;
+}
+
+.background-19023 {
+  background-image: url("assets/img19023-cropped-1960x256.jpg");
   background-size: cover;
   background-position: top right;
 }
