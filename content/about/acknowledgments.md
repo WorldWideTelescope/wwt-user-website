@@ -107,10 +107,17 @@ these organizations:
 
 And these individuals:
 
+- Alyssa Goodman ([Harvard University][cfa])
 - Tom McGlynn ([NASA SkyView][skyview])
+- August (Gus) Muench ([Harvard University][cfa] / [AAS][aas])
 - Alex Szalay ([Johns Hopkins][jhu-pa])
+- Patricia Udomprasert ([Harvard University][cfa])
+- David Weigel ([U. S. Space & Rocket Center][usrc])
+- Curtis Wong ([Microsoft Research][msr])
 
 [skyview]: https://skyview.gsfc.nasa.gov/
+[usrc]: https://www.rocketcenter.com/
+[msr]: https://www.microsoft.com/en-us/research/
 
 
 # Advisory Board
