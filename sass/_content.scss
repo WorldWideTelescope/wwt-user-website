@@ -201,3 +201,27 @@ a {
 	       1px -1px 0 #000,
                -1px -1px 0 #000;
 }
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+
+  div.youtube-embed {
+    max-width: 95%;
+    max-height: 95%;
+    margin: 1rem;
+  }
+
+  &:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+}

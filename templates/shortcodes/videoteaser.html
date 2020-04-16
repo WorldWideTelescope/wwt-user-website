@@ -1,0 +1,23 @@
+<section class="flex-videoteaser">
+  <a href="#{{ lbid }}"><img src="{{ img }}"></a>
+
+  <p>{{ body | safe }}</p>
+</section>
+
+<a href="#_" class="lightbox" id="{{ lbid }}">
+  <div class="youtube-embed">
+    <iframe src="https://www.youtube.com/embed/{{ ytid }}?enablejsapi=1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+    </iframe>
+  </div>
+</a>
+
+<script type="text/javascript">
+  // Pause the video when closing the lightbox.
+  document.getElementById("{{ lbid }}").addEventListener("click", function() {
+    var embed = document.querySelector("#{{ lbid }} iframe");
+    embed.contentWindow.postMessage(
+      '{"event":"command","func":"stopVideo","args":""}',
+      '*'
+    );
+  });
+</script>
