@@ -22,6 +22,17 @@ on WWT has been supported by the AAS, the US
 [Microsoft]: https://www.microsoft.com/
 
 
+# Academic Citations
+
+If you use WWT in scholarly work, the canoncial project reference to cite is
+[Rosenfield et al. 2018](https://dx.doi.org/10.3847/1538-4365/aab776). The
+canonical reference for the TOAST projection underlying WWT’s all-sky
+spherical visualizations is
+[McGlynn et al. 2019](https://doi.org/10.3847/1538-4365/aaf79e). You are also
+encouraged to cite and/or acknowledge the data sets underlying any WWT-based
+visualizations involved in your work.
+
+
 # Data Credits
 
 Credits for the scientific data sets that appear in WWT are stored in the
@@ -100,6 +111,41 @@ And these individuals:
 - Alex Szalay ([Johns Hopkins][jhu-pa])
 
 [skyview]: https://skyview.gsfc.nasa.gov/
+
+
+# Advisory Board
+
+The open-sourcing of the WWT project and transition in management from
+Microsoft Research to the AAS was overseen by the WWT Advisory Board. The
+project gratefully acknowledges the dedicated efforts of:
+
+- Sarah Block
+- Andy Connelly
+- Chen-Zhou Cui (International Partnerships Lead)
+- Cristine Donnelly
+- Jonathan Fay (Software Development Lead)
+- Karl Fogel
+- Alyssa Goodman
+- Ron Gilchrist
+- Morgan Griffith
+- Bryan Heidorn
+- Robert Hurt
+- Erin Johnson
+- Susanna Kohler
+- Knut Olsen
+- Fred Rasio
+- Doug Roberts (Planetariums and Museums Lead)
+- Phil Rosenfield (Astronomical Research Lead)
+- Gretchen Stahlman
+- Julie Steffen
+- Mark SubbaRao
+- Matt Turk
+- Pat Udomprasert (Education Lead)
+- Jaap Vreeling
+- David Weigel
+- Curtis Wong
+- Martin Woodward
+- Ryan Wyatt
 
 
 # Dedication
