@@ -2,3 +2,8 @@
 {%- set page = get_page(path=path) -%}
 {{ rel_top ~ page.path | safe }}
 {%- endmacro input -%}
+
+{%- macro section_url(rel_top, path) -%}
+{%- set section = get_section(path=path) -%}
+{{ rel_top ~ section.path | safe }}
+{%- endmacro input -%}

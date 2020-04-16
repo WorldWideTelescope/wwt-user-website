@@ -1,7 +1,7 @@
 +++
 date = 2020-04-07
 title = "About AAS WorldWide Telescope"
-aliases = ["About"]
+aliases = ["/About"]
 
 [extra]
 titlebox_class = "background-19036"

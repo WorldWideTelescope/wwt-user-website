@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{%- block title -%}
+{{ config.title }}: {{ section.title }}
+{%- endblock title -%}
+
+{% block full_width_content %}
+<div class="hero {{section.extra.titlebox_class}}">
+  <div class="maxwidth">
+    <span class="page-title">{{ section.title }}</span>
+  </div>
+</div>
+{% endblock full_width_content %}
+
+{% block content %}
+{{ section.content | safe }}
+{% endblock content %}
