@@ -54,7 +54,7 @@ WWT comes with batteries included:
 
 {% card(text="Learn About Tours", url="https://docs.worldwidetelescope.org/user-manual/1/guidedtours/", html=1) %}
 The same software that powers your dome also powers the <a
-href="/webclient/">WWT Web client</a> — opening up exciting possibilities for
+href="//worldwidetelescope.org/webclient/">WWT Web client</a> — opening up exciting possibilities for
 people to experience your content both in your dome and in the comfort of
 their own homes. WWT “tours” deliver a guided multimedia experience in both
 contexts.

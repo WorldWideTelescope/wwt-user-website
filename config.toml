@@ -1,4 +1,4 @@
-base_url = "."
+base_url = "https://newton.cx/~peter/files/wwtdemo/"
 title = "AAS WorldWide Telescope"
 description = "AAS WorldWide Telescope is a tool for showcasing astronomical data and knowledge."
 default_language = "en"

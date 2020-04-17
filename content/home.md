@@ -12,7 +12,7 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 
 [windows-client]: @/download.md#windows-client
 [webgl]: https://worldwidetelescope.gitbook.io/webgl-engine-reference/
-[web-client]: /webclient/
+[web-client]: //worldwidetelescope.org/webclient/
 [pywwt]: https://pywwt.readthedocs.io/
 [data-services]: https://wwt-api-client.readthedocs.io/en/latest/
 [docs]: https://docs.worldwidetelescope.org/
@@ -48,7 +48,7 @@ can power your <b>planetarium</b>.
 
 {% videoteaser(lbid="intro", img="../assets/video-thumbnail.jpg", ytid="CD_W6wJp26E") %}
 <i>Watch our trailer for a video introduction to WWT. Even better, go ahead,
-<a href="/webclient/">open the WWT Web client</a>, and start exploring!</i>
+<a href="//worldwidetelescope.org/webclient/">open the WWT Web client</a>, and start exploring!</i>
 {% end %}
 
 
@@ -58,7 +58,7 @@ Because WWT lives on the Web, you can get started right away:
 
 - If you’re interested in visualizing data in Python, check out our
   cloud-based [sample pywwt notebooks][pywwt-notebooks].
-- If that’s not for you, [launch the WWT web client](/webclient/).
+- If that’s not for you, [launch the WWT web client](//worldwidetelescope.org/webclient/).
 
 [pywwt-notebooks]: https://pywwt.readthedocs.io/en/stable/#quick-start
 

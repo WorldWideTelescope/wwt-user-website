@@ -9,7 +9,7 @@ titlebox_class = "background-19036"
 
 <section class="flex-cards">
 
-{% card(text="Launch the Web client", url="/webclient/", html=1) %}
+{% card(text="Launch the Web client", url="//worldwidetelescope.org/webclient/", html=1) %}
 You don’t need to download anything to start using AAS WorldWide Telescope
 — our <b>Web client</b> runs right in your browser.
 {% end %}
