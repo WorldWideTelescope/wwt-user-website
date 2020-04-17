@@ -9,7 +9,8 @@ titlebox_class = "background-19024"
 
 <!-- TODO: this is redundant with the docs hub index page -->
 
-Are you just getting started with WWT?
+If you’re just getting started with WWT, you might want to check out these
+resources:
 
 <section class="flex-cards">
 

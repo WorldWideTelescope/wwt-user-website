@@ -9,9 +9,14 @@ titlebox_class = "background-19036"
 
 <section class="flex-cards">
 
-{% card(text="Launch the Web client", url="/webclient/") %}
+{% card(text="Launch the Web client", url="/webclient/", html=1) %}
 You don’t need to download anything to start using AAS WorldWide Telescope
-— our Web client runs right in your browser.
+— our <b>Web client</b> runs right in your browser.
+{% end %}
+
+{% card(text="Install pywwt", url="https://pywwt.readthedocs.io/en/stable/installation.html", html=1) %}
+If you want to use WWT from Python, find installation instruction for
+<b>pywwt</b> on that project’s documentation pages.
 {% end %}
 
 </section>

@@ -4,9 +4,9 @@ template = "homepage.html"
 aliases = ["/Home"]
 +++
 
-The WWT ecosystem includes a [Windows application][windows-client], a
-[reusable JavaScript library][webgl], an [interactive web app][web-client],
-[a Python toolkit][pywwt],
+The WWT ecosystem includes a [Windows application][windows-client], an
+[interactive web app][web-client], a [Python toolkit][pywwt], a
+[reusable JavaScript library][webgl],
 [backing data distribution services][data-services], [support tools][infra],
 [documentation][docs], and [community].
 
@@ -105,9 +105,9 @@ those organizations, the [National Science Foundation][nsf], the
 [moore]: https://www.moore.org/
 [Microsoft]: https://www.microsoft.com/
 
-If you’d like to get involved, read our page on how to [connect](@/connect.md)
-with the WWT community, [sign up] for the WWT newsletter, or follow us on
-[Twitter], [YouTube], or [Facebook].
+If you’d like to get involved, [connect](@/connect.md) with the WWT community
+and introduce yourself! You can also [sign up] for the WWT newsletter and
+follow us on [Twitter], [YouTube], or [Facebook].
 
 [sign up]: https://bit.ly/wwt-signup
 [Twitter]: https://twitter.com/wwtelescope

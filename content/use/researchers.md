@@ -71,4 +71,11 @@ reusable JavaScript library. With a little web development elbow grease you
 can build your own custom Web interactives.
 {% end %}
 
+{% card(text="Beta Inquiry", url="mailto:wwt@aas.org", html=1) %}
+We are currently beta-testing support for easily creating WWT <a
+href="https://journals.aas.org/landing/interactive-figures-201909/"><b>interactive
+figures</b></a> in publications. If that sounds interesting to you, get in
+touch to learn more!
+{% end %}
+
 </section>
