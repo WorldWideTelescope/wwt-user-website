@@ -128,6 +128,11 @@ body {
         margin: 0 0 1rem 0;
         flex-grow: 1;
       }
+
+      img {
+        // ~hack for use/everyone/index.md
+        margin: 0 0 1rem 0;
+      }
     }
 
     .button {

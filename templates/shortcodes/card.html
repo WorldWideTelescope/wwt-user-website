@@ -7,7 +7,9 @@
     {% endif %}
   </p>
 
+  {% if url %}
   <div class="button">
     <a href="{{url | safe}}">{{text}}</a>
   </div>
+  {% endif %}
 </div>
