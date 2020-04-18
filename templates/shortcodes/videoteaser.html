@@ -1,10 +1,10 @@
 <section class="flex-videoteaser">
   <a href="#{{ lbid }}"><img src="{{ img }}"></a>
 
-  <p>{{ body | safe }}</p>
+  <div>{{ body | safe }}</div>
 </section>
 
-<a href="#_" class="lightbox" id="{{ lbid }}">
+<a href="#_" class="lightbox" id="{{ lbid }}" tabindex="-1">
   <div class="youtube-embed">
     <iframe src="https://www.youtube.com/embed/{{ ytid }}?enablejsapi=1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
     </iframe>
@@ -12,12 +12,23 @@
 </a>
 
 <script type="text/javascript">
-  // Pause the video when closing the lightbox.
-  document.getElementById("{{ lbid }}").addEventListener("click", function() {
-    var embed = document.querySelector("#{{ lbid }} iframe");
-    embed.contentWindow.postMessage(
-      '{"event":"command","func":"stopVideo","args":""}',
-      '*'
-    );
-  });
+  (function wireUpLightbox() {
+    // Pause the video when closing the lightbox, as triggered by clicking
+    // outside of the video or hitting the back button. Would also like to
+    // catch Escape keypresses but I don't know how to get the YouTube embed
+    // to report them.
+
+    function pauseIt() {
+      var embed = document.querySelector("#{{ lbid }} iframe");
+      embed.contentWindow.postMessage(
+        '{"event":"command","func":"stopVideo","args":""}',
+        '*'
+      );
+    }
+
+    var lightbox = document.getElementById("{{ lbid }}");
+    lightbox.addEventListener("click", pauseIt);
+
+    window.onhashchange = pauseIt;
+  })();
 </script>

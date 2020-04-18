@@ -4,63 +4,60 @@ template = "homepage.html"
 aliases = ["/Home"]
 +++
 
+It’s not a physical telescope — it’s a suite of **free and open source**
+software and data sets that combine to create stunning scientific
+visualizations and stories.
+
 The WWT ecosystem includes a [Windows application][windows-client], an
-[interactive web app][web-client], a [Python toolkit][pywwt], a
-[reusable JavaScript library][webgl],
-[backing data distribution services][data-services], [support tools][infra],
-[documentation][docs], and [community].
+[interactive web app][web-client], and toolkits for [Python][pywwt] and
+[JavaScript][webgl].
 
 [windows-client]: @/download.md#windows-client
-[webgl]: https://worldwidetelescope.gitbook.io/webgl-engine-reference/
 [web-client]: //worldwidetelescope.org/webclient/
 [pywwt]: https://pywwt.readthedocs.io/
-[data-services]: https://wwt-api-client.readthedocs.io/en/latest/
-[docs]: https://docs.worldwidetelescope.org/
-[infra]: https://docs.worldwidetelescope.org/#exploring-wwt-infrastructure
-[community]: https://wwt-forum.org/
-
-WWT is a **free and open-source** project brought to you by the non-profit
-[American Astronomical Society][aas] (AAS), the major organization of
-professional astronomers in North America. WWT’s web services are sponsored by
-the [.NET Foundation][dnf].
-
-[aas]: https://aas.org/
-[dnf]: https://dotnetfoundation.org/
-
-<section class="flex-cards">
-
-{% card(text="WWT and Research", url="../use/researchers", html=1) %}
-WWT’s sophisticated Web-based visualization capabilities allow
-<b>researchers</b> to explore and share their data.
-{% end %}
-
-{% card(text="WWT and Education", url="../use/educators", html=1) %}
-Visualizing the universe in accurate 3D detail isn’t just cool — it’s
-effective <b>education</b>.
-{% end %}
-
-{% card(text="WWT and Planetariums", url="../use/planetariums", html=1) %}
-From single-projector portable setups to high-end multi-channel systems, WWT
-can power your <b>planetarium</b>.
-{% end %}
-
-</section>
-
-{% videoteaser(lbid="intro", img="../assets/video-thumbnail.jpg", ytid="CD_W6wJp26E") %}
-<i>Watch our trailer for a video introduction to WWT. Even better, go ahead,
-<a href="//worldwidetelescope.org/webclient/">open the WWT Web client</a>, and start exploring!</i>
-{% end %}
+[webgl]: https://worldwidetelescope.gitbook.io/webgl-engine-reference/
 
 
 # Get Started with WWT
 
-Because WWT lives on the Web, you can get started right away:
+{% videoteaser(lbid="intro", img="../assets/video-thumbnail.jpg", ytid="CD_W6wJp26E") %}
+<ul>
+  <li><i><a href="#intro">Watch the trailer</a> for a video introduction.</i></li>
+  <li><i>Got Python? Check out our
+    cloud-based <a href="https://pywwt.readthedocs.io/en/stable/#quick-start">Jupyter notebooks</a>.</i></li>
+  <li><i><a href="//worldwidetelescope.org/webclient/">Launch the WWT web client</a>!</i></li>
+</ul>
+{% end %}
 
-- If you’re interested in visualizing data in Python, check out our
-  cloud-based [sample pywwt notebooks][pywwt-notebooks].
-- If that’s not for you, [launch the WWT web client](//worldwidetelescope.org/webclient/).
 
-[pywwt-notebooks]: https://pywwt.readthedocs.io/en/stable/#quick-start
+# Something for Everyone
+
+<section class="flex-cards">
+
+{% card(text="WWT and Research", url="../use/researchers/", html=1) %}
+WWT’s sophisticated Web-based visualization capabilities allow
+<b>researchers</b> to explore and share their data.
+{% end %}
+
+{% card(text="WWT and Education", url="../use/educators/", html=1) %}
+Visualizing the universe in accurate 3D detail isn’t just cool — it’s
+effective <b>education</b>.
+{% end %}
+
+</section>
+<section class="flex-cards">
+
+{% card(text="WWT and Planetariums", url="../use/planetariums/", html=1) %}
+From single-projector portable setups to high-end multi-channel systems, WWT
+can power your <b>planetarium</b>.
+{% end %}
+
+{% card(text="WWT and Fun!", url="../use/everyone/", html=1) %}
+It’s not all business here — lose yourself while exploring WWT’s <b>beautiful
+and immersive</b> environment.
+{% end %}
+
+</section>
 
 
 # Unique Features
@@ -100,7 +97,8 @@ WWT is a [.NET Foundation][dnf] project brought to you by the
 those organizations, the [National Science Foundation][nsf], the
 [Gordon and Betty Moore Foundation][moore], and [Microsoft].
 
-[sandt]: https://skyandtelescope.org/
+[aas]: https://aas.org/
+[dnf]: https://dotnetfoundation.org/
 [nsf]: https://www.nsf.gov/
 [moore]: https://www.moore.org/
 [Microsoft]: https://www.microsoft.com/
