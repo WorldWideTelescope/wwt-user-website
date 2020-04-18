@@ -13,8 +13,8 @@ ready to be delighted by the beauty of our universe!
 
 {% card(html=1) %}
 In <b>explore mode</b>, navigate the sky like you would in your favorite maps
-app — but choose which wavelength of light to vew, and pull up imagery taken
-by the world’s best telescopes.
+app — but also choose which wavelength of light to view, or pull up imagery
+taken by the world’s best telescopes.
 {% end %}
 
 {% card(html=1) %}
