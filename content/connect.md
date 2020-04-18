@@ -22,6 +22,11 @@ Stay in touch by signing up to receive the occasional <b>AAS WorldWide Telescope
 Newsletter</b>.
 {% end %}
 
+{% card(text="WWT on GitHub", url="https://github.com/WorldWideTelescope", html=1) %}
+Developers: ready to file an issue or a pull request? Our <b>GitHub
+organization</b> is where the action is.
+{% end %}
+
 </section>
 
 We also invite you to follow WWT on social media platforms like [Twitter],
