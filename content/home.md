@@ -35,7 +35,7 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 <section class="flex-cards">
 
 {% card(text="WWT and Research", url="../use/researchers/", html=1) %}
-WWT’s sophisticated Web-based visualization capabilities allow
+WWT’s sophisticated web-based visualization capabilities allow
 <b>researchers</b> to explore and share their data.
 {% end %}
 

@@ -25,7 +25,7 @@ night sky.
 
 </section>
 
-{{ bigbutton(text="Launch the Web client now", url="//worldwidetelescope.org/webclient/") }}
+{{ bigbutton(text="Launch the web client now", url="//worldwidetelescope.org/webclient/") }}
 
 
 # Getting Started with WWT

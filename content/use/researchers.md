@@ -39,7 +39,7 @@ tools that create and manipulate them.
 
 {% card(text="toasty documentation", url="https://toasty.readthedocs.io/", html=1) %}
 Use the <b>toasty</b> Python package to “tile” large images for efficient
-Web-based visualization.
+web-based visualization.
 {% end %}
 
 {% card(text="wwt_data_formats docs", url="https://wwt-data-formats.readthedocs.io/", html=1) %}
@@ -52,7 +52,7 @@ low-level data formats, and provides tools for reading and writing them.
 
 # Share Your Science on the Web
 
-One of WWT’s unique strengths is that it’s built for the Web, so that you can
+One of WWT’s unique strengths is that it’s built for the web, so that you can
 share WWT visualizations with just about anyone anywhere. You can use it to
 build interactives ranging from simple embeds in your personal webpage up to
 full-blown custom web applications.
@@ -68,7 +68,7 @@ tours that explain your research, it makes it easy to share them as well!
 {% card(text="WebGL Engine docs", url="https://worldwidetelescope.gitbook.io/webgl-engine-reference/", html=1) %}
 The WWT web client and pywwt are powered by the <b>WWT WebGL Engine</b>, a
 reusable JavaScript library. With a little web development elbow grease you
-can build your own custom Web interactives.
+can build your own custom web interactives.
 {% end %}
 
 {% card(text="Beta Inquiry", url="mailto:wwt@aas.org", html=1) %}
