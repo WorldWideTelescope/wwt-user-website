@@ -4,22 +4,74 @@
   <div>{{ body | safe }}</div>
 </section>
 
-<a href="#_" class="lightbox" id="{{ lbid }}" tabindex="-1">
-  <div class="youtube-embed">
-    <iframe src="https://www.youtube.com/embed/{{ ytid }}?enablejsapi=1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-    </iframe>
-  </div>
+<a href="#_" class="lightbox" id="{{ lbid }}">
+  <iframe src="https://www.youtube.com/embed/{{ ytid }}?enablejsapi=1" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  </iframe>
 </a>
 
 <script type="text/javascript">
   (function wireUpLightbox() {
+    var container = document.querySelector("#{{ lbid }} .youtube-lightbox");
+    var embed = document.querySelector("#{{ lbid }} iframe");
+    var aspect_ratio = 16. / 9;
+    var min_padding = 80;
+
+    // In order to give the iframe the right aspect ratio while ensuring that
+    // it fits within the viewport both horizontally and vertically, we need
+    // to size it programmatically, as far as I can tell.
+
+    function sizeEmbed() {
+      var win_w = window.innerWidth;
+      var win_h = window.innerHeight;
+      var emb_w = null, emb_h = null;
+
+      if (win_w / win_h > aspect_ratio) {
+        // Window is wide -- embed will fill vertically
+        emb_h = win_h;
+        emb_w = emb_h * aspect_ratio;
+
+        if (win_w - emb_w < min_padding) {
+          // Window's aspect ratio is very close to that of the embed, such
+          // that there's no target area to click to make it disappear. Shrink
+          // the embed to fix that.
+          emb_h -= min_padding;
+          emb_w = emb_h * aspect_ratio;
+        }
+      } else {
+        // Window is tall -- embed will fill it horizontally
+        emb_w = win_w;
+        emb_h = emb_w / aspect_ratio;
+
+        if (win_h - emb_h < min_padding) {
+          emb_w -= min_padding;
+          emb_h = emb_w / aspect_ratio;
+        }
+      }
+
+      // Enforce YouTube-recommended minimum size.
+      if (emb_w < 300) {
+        emb_w = 300;
+        emb_h = emb_w /  aspect_ratio;
+      }
+
+      if (emb_h < 150) {
+        emb_h = 150;
+        emb_w = emb_h * aspect_ratio;
+      }
+
+      embed.style.width = emb_w + "px";
+      embed.style.height = emb_h + "px";
+    }
+
+    sizeEmbed();
+    window.onresize = function(event) { sizeEmbed() };
+
     // Pause the video when closing the lightbox, as triggered by clicking
     // outside of the video or hitting the back button. Would also like to
     // catch Escape keypresses but I don't know how to get the YouTube embed
     // to report them.
 
-    function pauseIt() {
-      var embed = document.querySelector("#{{ lbid }} iframe");
+    function pauseEmbed() {
       embed.contentWindow.postMessage(
         '{"event":"command","func":"stopVideo","args":""}',
         '*'
@@ -27,8 +79,7 @@
     }
 
     var lightbox = document.getElementById("{{ lbid }}");
-    lightbox.addEventListener("click", pauseIt);
-
-    window.onhashchange = pauseIt;
+    lightbox.addEventListener("click", pauseEmbed);
+    window.onhashchange = pauseEmbed;
   })();
 </script>

@@ -217,12 +217,6 @@ a {
   left: 0;
   background: rgba(60, 60, 60, 0.8);
 
-  div.youtube-embed {
-    max-width: 95%;
-    max-height: 90%;
-    margin: 1rem;
-  }
-
   &:target {
     display: flex;
     align-items: center;
