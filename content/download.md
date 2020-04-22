@@ -85,20 +85,21 @@ Do not attempt to install WWT 5.0 or higher on Windows XP. It will not run and
 can potentially prevent the legacy version from running.
 
 
-# WWT Remote Control {#remote-control}
+# WWT Remote Control (Windows only) {#remote-control}
 
-The WWT Remote Control utility assists with remotely operating the
-application, especially in cluster environments as found in planetariums.
+The WWT Remote Control is a Windows utility that assists with remotely
+operating the main WWT application, especially in cluster environments as
+found in planetariums.
 
 - [Download WWTRemote 5.0](http://wwtweb.blob.core.windows.net/drops/WWTRemote.5.0.0.msi)
 - [Download WWTRemote 2.1.1 Legacy](http://wwtweb.blob.core.windows.net/drops/WWTRemote.2.1.1.msi)
 
 
-# WWT Add-in for Excel {#excel-addin}
+# WWT Add-in for Excel (Windows only) {#excel-addin}
 
-The WWT Excel add-in enables you to use the familiar capabilities of Microsoft
-Excel to efficiently highlight, organize, and import your data into the
-WorldWide Telescope visualization environment.
+The WWT Excel add-in enables Windows users to efficiently highlight, organize,
+and import their data into the AAS WorldWide Telescope visualization
+environment using the familiar capabilities of Microsoft Excel.
 [Download the WWT Excel Add-in](https://wwtweb.blob.core.windows.net/drops/WWTExcelAddin.msi).
 
 
