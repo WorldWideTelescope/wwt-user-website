@@ -36,10 +36,10 @@ header {
 
     a {
       text-decoration: none;
-      color: $text-link-color;
+      color: $card-button-link-color;
 
       &:hover {
-        color: $text-link-hover-color;
+        color: $card-button-link-hover-color;
       }
     }
 

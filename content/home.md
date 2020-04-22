@@ -81,10 +81,9 @@ application</a>.
 {% end %}
 
 {% card(text="Data Guide", url="https://docs.worldwidetelescope.org/data-guide/1/", html=1) %}
-<a href="https://github.com/WorldWideTelescope/"><b>Open source</b></a> and
-<b>open data</b> are at the core of WWT’s design. No need to ask for
-permission — you can remix your own images, 3D models, tours, maps, and more
-into the WWT environment.
+<b>Open source</b> and <b>open data</b> are at the core of WWT’s design. No
+need to ask for permission — you can remix your own images, 3D models, tours,
+maps, and more into the WWT environment.
 {% end %}
 
 </section>

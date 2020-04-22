@@ -36,14 +36,6 @@ body {
     margin: 1rem 2rem;
   }
 
-  a {
-    color: $text-link-color;
-
-    &:hover {
-      color: $text-link-hover-color;
-    }
-  }
-
   h1 {
     font-size: 150%;
     margin: 3rem 0 0.6rem 0;
@@ -189,9 +181,11 @@ body {
 
 a {
   color: $text-link-color;
+  text-decoration: none;
 
   &:hover {
     color: $text-link-hover-color;
+    text-decoration: underline;
   }
 }
 
