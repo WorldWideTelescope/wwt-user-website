@@ -15,7 +15,7 @@ You don’t need to download anything to start using AAS WorldWide Telescope
 {% end %}
 
 {% card(text="Install pywwt", url="https://pywwt.readthedocs.io/en/stable/installation.html", html=1) %}
-If you want to use WWT from Python, find installation instruction for
+If you want to use WWT from Python, find installation instructions for
 <b>pywwt</b> on that project’s documentation pages.
 {% end %}
 
