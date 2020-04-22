@@ -79,7 +79,8 @@ div.hero {
         @include border-radius(4px);
 
         &:hover {
-          background: #Fc2151;
+          background: $card-button-color;
+          border-color: $card-edge-color;
         }
       }
     }
