@@ -146,10 +146,10 @@ footer {
   color: $muted-color;
 
   a {
-    color: $muted-color;
+    color: $muted-link-color;
 
     &:hover {
-      color: $muted-hover-color;
+      color: $muted-link-hover-color;
     }
   }
 
