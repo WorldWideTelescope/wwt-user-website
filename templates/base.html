@@ -28,6 +28,21 @@
     </script>
     {% endif %}
 
+    <script>
+      // Azure Storage static websites don't redirect directories to trailing
+      // slashes: if the file `foo/bar/index.html` exists, requests to
+      // `foo/bar` will be treated equivalent to `foo/bar/` and
+      // `foo/bar/index.html`, even though this breaks relative URL
+      // resolution. Zola only emits index.html files, so if we're being
+      // loaded and our path doesn't look like one of the latter two forms, we
+      // can be confident that we should redirect. There might be a flash of
+      // broken content but it will hopefully be brief.
+      if (window.location.href.indexOf("/", window.location.href.length - 1) === -1 &&
+          window.location.href.indexOf(".html", window.location.href.length - 5) === -1) {
+        window.location.href = window.location.href + "/";
+      }
+    </script>
+
     <link rel="stylesheet" href="{{ rel_top ~ 'assets/fontawesome.min.css' | safe }}">
     <link rel="stylesheet" href="{{ rel_top ~ 'style.css' | safe }}">
     <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
