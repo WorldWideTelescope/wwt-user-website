@@ -13,7 +13,7 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 [JavaScript][webgl].
 
 [windows-client]: @/download.md#windows-client
-[web-client]: //worldwidetelescope.org/webclient/
+[web-client]: /webclient/
 [pywwt]: https://pywwt.readthedocs.io/
 [webgl]: https://worldwidetelescope.gitbook.io/webgl-engine-reference/
 
@@ -25,7 +25,7 @@ The WWT ecosystem includes a [Windows application][windows-client], an
   <li><i><a href="#intro">Watch the trailer</a> for a video introduction.</i></li>
   <li><i>Got Python? Check out our
     cloud-based <a href="https://pywwt.readthedocs.io/en/stable/#quick-start">Jupyter notebooks</a>.</i></li>
-  <li><i><a href="//worldwidetelescope.org/webclient/">Launch the WWT web client</a>!</i></li>
+  <li><i><a href="/webclient/">Launch the WWT web client</a>!</i></li>
 </ul>
 {% end %}
 

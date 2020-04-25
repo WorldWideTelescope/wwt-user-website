@@ -17,7 +17,7 @@ resources:
 {% card(text="Read the user manual", url="https://docs.worldwidetelescope.org/user-manual/1/", html=1) %}
 The <b>AAS WorldWide Telescope User Manual</b> shows how to use
 the WWT Windows application and the
-<a href="//worldwidetelescope.org/webclient/">web client</a>.
+<a href="/webclient/">web client</a>.
 {% end %}
 
 {% card(text="Start using pywwt", url="https://pywwt.readthedocs.io/en/stable/#quick-start", html=1) %}

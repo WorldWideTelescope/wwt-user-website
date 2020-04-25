@@ -25,7 +25,7 @@ night sky.
 
 </section>
 
-{{ bigbutton(text="Launch the web client now", url="//worldwidetelescope.org/webclient/") }}
+{{ bigbutton(text="Launch the web client now", url="/webclient/") }}
 
 
 # Getting Started with WWT
@@ -71,4 +71,4 @@ in detail — from the volcanoes of Mars to the Great Red Spot of Jupiter.
 
 </section>
 
-{{ bigbutton(text="Start Exploring", url="//worldwidetelescope.org/webclient/") }}
+{{ bigbutton(text="Start Exploring", url="/webclient/") }}
