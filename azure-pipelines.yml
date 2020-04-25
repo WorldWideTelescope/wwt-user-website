@@ -23,11 +23,11 @@ jobs:
       curl -fsSL "$u" |tar xz
     displayName: Install Zola
 
-  - powershell: |
+  - script: |
       ./zola check
     displayName: Check site
 
-  - powershell: |
+  - script: |
       ./zola build -o $(build.artifactStagingDirectory)
     displayName: Build site
 
@@ -44,6 +44,6 @@ jobs:
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: |
-        az storage blob sync -c '$web' -s $(build.artifactStagingDirectory)
+        az storage blob upload-batch -s $(build.artifactStagingDirectory) -d '$web'
     env:
       AZURE_STORAGE_CONNECTION_STRING: $(AZURE_STORAGE_CONNECTION_STRING)
