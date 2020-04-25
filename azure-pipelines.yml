@@ -23,9 +23,10 @@ jobs:
       curl -fsSL "$u" |tar xz
     displayName: Install Zola
 
-  - script: |
-      ./zola check
-    displayName: Check site
+  # The check fails spuriously on Azure Pipelines too often to be useful.
+  # - script: |
+  #     ./zola check
+  #   displayName: Check site
 
   - script: |
       ./zola build -o $(build.artifactStagingDirectory)
