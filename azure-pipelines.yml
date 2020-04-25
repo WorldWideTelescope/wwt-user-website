@@ -1,16 +1,44 @@
-# Note that although we use the zola-wwtguide repository for our Zola pipeline
-# template, we don't actually use the wwtguide theme!
-
-resources:
-  repositories:
-    - repository: wwtguide
-      type: github
-      name: WorldWideTelescope/zola-wwtguide
-      endpoint: wwtelescope
+# Custom pipeline here because unlike the other static sites, we can't run the
+# build on Windows because we need to use a case-sensitive filesystem. That
+# means that we can't use the AzureFileCopy command to upload the files to
+# Azure Storage.
 
 jobs:
-- template: azure-build-and-publish.yml@wwtguide
-  parameters:
-    azureServiceConnectionName: 'aas@wwtadmindotnetfoundation'
-    storageAccountName: 'wwtwebstatic'
-    pubPrefix: ''
+- job: BuildAndPublish
+  pool:
+    vmImage: 'ubuntu-latest'
+
+  steps:
+
+  - checkout: self
+    submodules: recursive
+
+  - script: |
+      u='https://github.com/getzola/zola/releases/download/v${{ parameters.zolaVersion }}/zola-v${{ parameters.zolaVersion }}-x86_64-unknown-linux-gnu.tar.gz'
+      curl -fsSL "$u" |tar xz
+    displayName: Install Zola
+
+  - powershell: |
+      ./zola check
+    displayName: Check site
+
+  - powershell: |
+      ./zola build -o $(build.artifactStagingDirectory)
+    displayName: Build site
+
+  - task: PublishPipelineArtifact@0
+    displayName: Publish site as artifact
+    inputs:
+      artifactName: static-site
+      targetPath: $(Build.ArtifactStagingDirectory)
+
+  - task: AzureCLI@2
+    displayName: Upload to Azure Storage
+    inputs:
+      azureSubscription: 'aas@wwtadmindotnetfoundation'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az storage blob sync -c '$web' -s $(build.artifactStagingDirectory)
+    env:
+      AZURE_STORAGE_CONNECTION_STRING: $(AZURE_STORAGE_CONNECTION_STRING)
