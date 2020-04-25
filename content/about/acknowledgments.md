@@ -102,7 +102,7 @@ these organizations:
 [nasa]: https://www.nasa.gov/
 [noirlab]: https://nationalastro.org/
 [princeton]: https://web.astro.princeton.edu/
-[usno]: https://www.usno.navy.mil/USNO
+[usno]: https://en.wikipedia.org/wiki/United_States_Naval_Observatory
 [vamp]: https://virtualastronomy.org/
 
 And these individuals:
