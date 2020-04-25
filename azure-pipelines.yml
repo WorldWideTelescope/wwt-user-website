@@ -3,6 +3,11 @@
 # means that we can't use the AzureFileCopy command to upload the files to
 # Azure Storage.
 
+parameters:
+- name: 'zolaVersion'
+  default: '0.10.1'
+  type: string
+
 jobs:
 - job: BuildAndPublish
   pool:
