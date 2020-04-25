@@ -1,0 +1,16 @@
+# Note that although we use the zola-wwtguide repository for our Zola pipeline
+# template, we don't actually use the wwtguide theme!
+
+resources:
+  repositories:
+    - repository: wwtguide
+      type: github
+      name: WorldWideTelescope/zola-wwtguide
+      endpoint: wwtelescope
+
+jobs:
+- template: azure-build-and-publish.yml@wwtguide
+  parameters:
+    azureServiceConnectionName: 'aas@wwtadmindotnetfoundation'
+    storageAccountName: 'wwtwebstatic'
+    pubPrefix: ''
