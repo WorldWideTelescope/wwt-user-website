@@ -47,11 +47,16 @@ The files in this repository drive the following URL paths:
 - `/download`
 - `/home`
 - `/learn`
+- `/style.css`
 - `/terms`
 - `/use`
 
 Note that the root path `/` is handled specially in WWT: users are redirected
 either to `/webclient/` or `/home/` depending on a preference cookie.
+
+Routing in the reverse proxy is case-insensitive, as were the URLs in the
+original app backed, so the generated website provides numerous capitalized
+aliases to the above too.
 
 
 ## Contributing
