@@ -37,9 +37,9 @@
       // loaded and our path doesn't look like one of the latter two forms, we
       // can be confident that we should redirect. There might be a flash of
       // broken content but it will hopefully be brief.
-      if (window.location.href.indexOf("/", window.location.href.length - 1) === -1 &&
-          window.location.href.indexOf(".html", window.location.href.length - 5) === -1) {
-        window.location.href = window.location.href + "/";
+      if (window.location.pathname.indexOf("/", window.location.pathname.length - 1) === -1 &&
+          window.location.pathname.indexOf(".html", window.location.pathname.length - 5) === -1) {
+        window.location.pathname = window.location.pathname + "/";
       }
     </script>
 
