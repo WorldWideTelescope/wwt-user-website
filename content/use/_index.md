@@ -1,6 +1,8 @@
 +++
 insert_anchor_links = "right"
+template = "section_redirect.html"
+aliases = ["/Use"]
 
 [extra]
-titlebox_class = ""
+dest_url = "/home/"
 +++

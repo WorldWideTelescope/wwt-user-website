@@ -11,7 +11,7 @@ The free, open-source AAS WorldWide Telescope [Windows client][windows-client]
 can power planetariums ranging from single-projector portable domes to
 world-class facilities with dozens of projectors.
 
-[windows-client]: @/download.md#windows-client
+[windows-client]: @/download/_index.md#windows-client
 
 
 # Flexibility

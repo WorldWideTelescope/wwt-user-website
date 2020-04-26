@@ -37,7 +37,7 @@ Harvard professor [Alyssa Goodman].
 [disappearance at sea]: https://en.wikipedia.org/wiki/Jim_Gray_(computer_scientist)#Disappearance
 [Microsoft Research]: https://www.microsoft.com/en-us/research/
 [Jonathan Fay]: https://en.wikipedia.org/wiki/Jonathan_Fay
-[Windows client]: @/download.md#windows-client
+[Windows client]: @/download/_index.md#windows-client
 [Alyssa Goodman]: https://astronomy.fas.harvard.edu/people/goodman-alyssa
 
 The WWT [Windows client] was

@@ -12,7 +12,7 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 [interactive web app][web-client], and toolkits for [Python][pywwt] and
 [JavaScript][webgl].
 
-[windows-client]: @/download.md#windows-client
+[windows-client]: @/download/_index.md#windows-client
 [web-client]: /webclient/
 [pywwt]: https://pywwt.readthedocs.io/
 [webgl]: https://worldwidetelescope.gitbook.io/webgl-engine-reference/
