@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/aasworldwidetelescope/WWT/_apis/build/status/WorldWideTelescope.wwt-user-website?branchName=master)](https://dev.azure.com/aasworldwidetelescope/WWT/_build/latest?definitionId=1&branchName=master)
+
 # The worldwidetelescope.org “user” website
 
 The user-facing portion of the [AAS](https://aas.org/)
