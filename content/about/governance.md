@@ -34,12 +34,12 @@ Committee. Current members of the Steering Committee are:
 - [Dr. William Armentrout][armentrout] (Green Bank Observatory)
 - Dr. Gina Brissenden (U. Arizona / AAS)
 - [Prof. Andrew Connolly][connolly] (U. Washington)
-- [Prof. Kelle Cruz][cruz] (Hunter College; AAS Board of Trustees representative)
+- [Prof. Hannah Jang-Condell][jangcondell] (U. Wyoming; AAS Board of Trustees representative)
 - [Prof. Sarah Loebman][loebman] (U. California, Merced; chair)
 
 [armentrout]: http://willarmentrout.com/
 [connolly]: https://depts.washington.edu/astron/profile/connolly-andy/
-[cruz]: http://www.hunter.cuny.edu/physics/faculty/cruz/kelle-cruz
+[jangcondell]: http://physics.uwyo.edu/~hannah/
 [loebman]: https://sarahloebman.wixsite.com/home
 
 The AAS gratefully acknowledges the service of previous Directors:
@@ -52,6 +52,7 @@ and previous members of the Steering Committee:
 - Amanda Bauer
 - Nancy Brickhouse
 - Jack Burns
+- Kelle Cruz
 - Buell Jannuzi
 - Jessica Kirkpatrick
 - Kevin Marvel
