@@ -31,11 +31,11 @@ AAS is [Dr. Peter K. G. Williams][pkgw], reachable at <peter.williams@aas.org>.
 AAS participation in the WWT project is overseen by the WWT Steering
 Committee. Current members of the Steering Committee are:
 
-- [Dr. William Armentrout][armentrout] (Green Bank Observatory)
+- [Dr. William Armentrout][armentrout] (Green Bank Observatory; chair)
 - Dr. Gina Brissenden (U. Arizona / AAS)
 - [Prof. Andrew Connolly][connolly] (U. Washington)
 - [Prof. Hannah Jang-Condell][jangcondell] (U. Wyoming; AAS Board of Trustees representative)
-- [Prof. Sarah Loebman][loebman] (U. California, Merced; chair)
+- [Prof. Sarah Loebman][loebman] (U. California, Merced)
 
 [armentrout]: http://willarmentrout.com/
 [connolly]: https://depts.washington.edu/astron/profile/connolly-andy/

@@ -80,7 +80,7 @@ universe,” making the two a natural pairing.
 [aas]: https://aas.org/
 [aas-mission]: https://aas.org/about/mission-and-vision-statement
 
-While the Society manages certin core assets and sponsors targeted development
+While the Society manages certain core assets and sponsors targeted development
 of the newly-rebranded “AAS WorldWide Telescope,” openness to all comers is a
 core value of the project, and the WWT
 [governance model](@/about/governance.md) aspires to embody that value. If
