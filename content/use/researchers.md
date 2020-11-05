@@ -65,9 +65,9 @@ through WWT’s simulated universe. Not only does WWT make it easy to create
 tours that explain your research, it makes it easy to share them as well!
 {% end %}
 
-{% card(text="WebGL Engine docs", url="https://worldwidetelescope.gitbook.io/webgl-engine-reference/", html=1) %}
+{% card(text="WebGL Engine docs", url="https://docs.worldwidetelescope.org/webgl-reference/latest/", html=1) %}
 The WWT web client and pywwt are powered by the <b>WWT WebGL Engine</b>, a
-reusable JavaScript library. With a little web development elbow grease you
+reusable TypeScript library. With a little web development elbow grease you
 can build your own custom web interactives.
 {% end %}
 

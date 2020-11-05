@@ -10,12 +10,12 @@ visualizations and stories.
 
 The WWT ecosystem includes a [Windows application][windows-client], an
 [interactive web app][web-client], and toolkits for [Python][pywwt] and
-[JavaScript][webgl].
+[TypeScript/JavaScript][webgl].
 
 [windows-client]: @/download/_index.md#windows-client
 [web-client]: /webclient/
 [pywwt]: https://pywwt.readthedocs.io/
-[webgl]: https://worldwidetelescope.gitbook.io/webgl-engine-reference/
+[webgl]: https://docs.worldwidetelescope.org/webgl-reference/latest/
 
 
 # Get Started with WWT
@@ -72,7 +72,7 @@ through WWT’s simulated universe. Create and share tours to teach astronomical
 concepts, showcase your data, or share your passion for the cosmos!
 {% end %}
 
-{% card(text="WebGL Engine docs", url="https://worldwidetelescope.gitbook.io/webgl-engine-reference/", html=1) %}
+{% card(text="WebGL Engine docs", url="https://docs.worldwidetelescope.org/webgl-reference/latest/", html=1) %}
 WWT is <b>built for the web</b> so that you can share your content anywhere
 that web browsers run — which is everywhere! You can embed WWT in a webpage
 in a few minutes, or build your own <a
