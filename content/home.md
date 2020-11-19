@@ -110,12 +110,3 @@ follow us on [Twitter], [YouTube], or [Facebook].
 [Twitter]: https://twitter.com/wwtelescope
 [YouTube]: https://www.youtube.com/c/AASWorldWideTelescope
 [Facebook]: https://facebook.com/wwtelescope
-
-
-<script>
-// Helper for the Microsoft Live OAuth workflow.
-let code = new URLSearchParams(window.location.search).get('code');
-if (code) {
-  window.location.href = '/LiveId/AuthenticateFromCode/' + encodeURI(code) + '?returnUrl=%2Fhome%2F';
-}
-</script>
