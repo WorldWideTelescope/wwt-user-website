@@ -91,16 +91,18 @@ maps, and more into the WWT environment.
 
 # A Team Effort
 
-WWT is a [.NET Foundation][dnf] project brought to you by the
-[American Astronomical Society][aas] (AAS). Work on WWT has been supported by
-those organizations, the [National Science Foundation][nsf], the
-[Gordon and Betty Moore Foundation][moore], and [Microsoft].
+WWT is a [.NET Foundation][dnf] project brought to you by the [American
+Astronomical Society][aas] (AAS). Work on WWT has been supported by those
+organizations, the [National Science Foundation][nsf], the [Gordon and Betty
+Moore Foundation][moore], and [Microsoft]. For more information see our
+[Acknowledgments][acknowledgments].
 
 [aas]: https://aas.org/
 [dnf]: https://dotnetfoundation.org/
 [nsf]: https://www.nsf.gov/
 [moore]: https://www.moore.org/
 [Microsoft]: https://www.microsoft.com/
+[acknowledgments]: @/about/acknowledgments.md
 
 If you’d like to get involved, [connect](@/connect.md) with the WWT community
 and introduce yourself! You can also [sign up] for the WWT newsletter and

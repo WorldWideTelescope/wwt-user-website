@@ -10,7 +10,7 @@ titlebox_class = "background-19038"
 The AAS WorldWide Telescope project (WWT) is a [.NET Foundation][dnf] project
 sponsored and managed by the [American Astronomical Society][aas] (AAS). Work
 on WWT has been supported by the AAS, the US
-[National Science Foundation][nsf] (grants [1550701] and [1642446]), the
+[National Science Foundation][nsf] (grants [1550701], [1642446], and [2004840]), the
 [Gordon and Betty Moore Foundation][moore], and [Microsoft].
 
 [dnf]: https://dotnetfoundation.org/
@@ -18,6 +18,7 @@ on WWT has been supported by the AAS, the US
 [nsf]: https://www.nsf.gov/
 [1550701]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1550701
 [1642446]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1642446
+[2004840]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2004840
 [moore]: https://www.moore.org/
 [Microsoft]: https://www.microsoft.com/
 
