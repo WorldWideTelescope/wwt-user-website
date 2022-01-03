@@ -1,142 +1,151 @@
 {%- import "macros.html" as macros -%}
 {# Jumping through hoops to get a relative path to the site root #}
 {%- if current_path == "/" -%}
-  {%- set_global rel_top = "./" -%}
+{%- set_global rel_top = "." -%}
 {%- else -%}
-  {%- set_global rel_top_work = [] -%}
-  {%- for _ignored in current_path | split(pat="/") | slice(start=1) -%}
-    {%- set_global rel_top_work = rel_top_work | concat(with="..") -%}
-  {%- endfor -%}
-  {%- set_global rel_top = rel_top_work | join(sep="/") -%}
-  {%- set_global rel_top = rel_top ~ "/" -%}
+{%- set_global rel_top_work = [] -%}
+{%- for _ignored in current_path | trim_end_matches(pat="/") | split(pat="/") | slice(start=1) -%}
+{%- set_global rel_top_work = rel_top_work | concat(with="..") -%}
+{%- endfor -%}
+{%- set_global rel_top = rel_top_work | join(sep="/") -%}
 {%- endif -%}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-    {% if config.extra.google_analytics_id %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics_id }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ config.extra.google_analytics_id }}');
-    </script>
-    {% endif %}
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-    <script>
-      // Azure Storage static websites don't redirect directories to trailing
-      // slashes: if the file `foo/bar/index.html` exists, requests to
-      // `foo/bar` will be treated equivalent to `foo/bar/` and
-      // `foo/bar/index.html`, even though this breaks relative URL
-      // resolution. Zola only emits index.html files, so if we're being
-      // loaded and our path doesn't look like one of the latter two forms, we
-      // can be confident that we should redirect. There might be a flash of
-      // broken content but it will hopefully be brief.
-      if (window.location.pathname.indexOf("/", window.location.pathname.length - 1) === -1 &&
-          window.location.pathname.indexOf(".html", window.location.pathname.length - 5) === -1) {
-        window.location.pathname = window.location.pathname + "/";
-      }
-    </script>
+  {% if config.extra.google_analytics_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ config.extra.google_analytics_id }}');
+  </script>
+  {% endif %}
 
-    <link rel="stylesheet" href="{{ rel_top ~ 'assets/fontawesome.min.css' | safe }}">
-    <link rel="stylesheet" href="{{ rel_top ~ 'style.css' | safe }}">
-    <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    {% block extra_head %}
-    {% endblock extra_head %}
-  </head>
+  <script>
+    // Azure Storage static websites don't redirect directories to trailing
+    // slashes: if the file `foo/bar/index.html` exists, requests to
+    // `foo/bar` will be treated equivalent to `foo/bar/` and
+    // `foo/bar/index.html`, even though this breaks relative URL
+    // resolution. Zola only emits index.html files, so if we're being
+    // loaded and our path doesn't look like one of the latter two forms, we
+    // can be confident that we should redirect. There might be a flash of
+    // broken content but it will hopefully be brief.
+    if (window.location.pathname.indexOf("/", window.location.pathname.length - 1) === -1 &&
+      window.location.pathname.indexOf(".html", window.location.pathname.length - 5) === -1) {
+      window.location.pathname = window.location.pathname + "/";
+    }
+  </script>
 
-  <body>
-    <header>
-      <nav class="maxwidth">
-        <a href="{{ macros::page_url(rel_top=rel_top, path='home.md') }}">
-          <img class="header-logo" src="{{ rel_top ~ 'assets/wwt-logomark.png' | safe }}">
+  <link rel="stylesheet" href="{{ rel_top ~ '/assets/fontawesome.min.css' | safe }}">
+  <link rel="stylesheet" href="{{ rel_top ~ '/style.css' | safe }}">
+  <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  {% block extra_head %}
+  {% endblock extra_head %}
+</head>
+
+<body>
+  <header>
+    <nav class="maxwidth">
+      <a href="{{ macros::page_url(rel_top=rel_top, path='home.md') }}">
+        <img class="header-logo" src="{{ rel_top ~ '/assets/wwt-logomark.png' | safe }}">
+      </a>
+
+      <div id="topnav">
+        <i class="fa fa-bars" id="mobile-nav-menu-button"></i>
+
+        <ul>
+          <li class="nav-dropdown-container">
+            <a class="nav-link">About</a><i class="fa fa-caret-down"></i>
+            <ul class="nav-dropdown">
+              <li><a href="{{ macros::section_url(rel_top=rel_top, path='about/_index.md') }}">About WWT</a></li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='about/governance.md') }}">Governance</a></li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='about/acknowledgments.md') }}">Acknowledgments</a>
+              </li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='terms.md') }}">Terms of Use</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown-container">
+            <a class="nav-link">Using WWT</a><i class="fa fa-caret-down"></i>
+            <ul class="nav-dropdown">
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/researchers.md') }}">For Research</a></li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/educators.md') }}">In the Classroom</a></li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/planetariums.md') }}">In Planetariums</a></li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/everyone/index.md') }}">For Fun!</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="{{ macros::section_url(rel_top=rel_top, path='learn/_index.md') }}">Learn More</a>
+          </li>
+          <li>
+            <a href="{{ macros::section_url(rel_top=rel_top, path='download/_index.md') }}">Download</a>
+          </li>
+          <li>
+            <a href="{{ macros::page_url(rel_top=rel_top, path='connect.md') }}">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  {% block full_width_content %}
+  {% endblock full_width_content %}
+
+  <div class="maxwidth">
+    <main class="content">
+      {% block content %}
+      {% endblock content %}
+    </main>
+
+    <footer>
+      <div id="footer-top">
+        <p>Copyright {{ now() | date(format="%Y") }}
+          <a href="https://aas.org/">AAS</a>. HTML generated
+          with <a href="https://www.getzola.org/">Zola</a>.
+          <a href="{{ config.extra.github_url | safe }}">Source code</a>.
+        </p>
+
+        <a class="footer-icon" href="https://bit.ly/wwt-signup" title="Newsletter Signup"
+          aria-label="Newsletter Signup">
+          <i class="fa fa-envelope"></i>
         </a>
 
-        <div id="topnav">
-          <i class="fa fa-bars" id="mobile-nav-menu-button"></i>
+        <a class="footer-icon" href="{{config.extra.twitter_url | safe}}" title="Twitter" aria-label="Twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
 
-          <ul>
-            <li class="nav-dropdown-container">
-              <a class="nav-link">About</a><i class="fa fa-caret-down"></i>
-              <ul class="nav-dropdown">
-                <li><a href="{{ macros::section_url(rel_top=rel_top, path='about/_index.md') }}">About WWT</a></li>
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='about/governance.md') }}">Governance</a></li>
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='about/acknowledgments.md') }}">Acknowledgments</a></li>
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='terms.md') }}">Terms of Use</a></li>
-              </ul>
-            </li><li class="nav-dropdown-container">
-              <a class="nav-link">Using WWT</a><i class="fa fa-caret-down"></i>
-              <ul class="nav-dropdown">
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/researchers.md') }}">For Research</a></li>
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/educators.md') }}">In the Classroom</a></li>
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/planetariums.md') }}">In Planetariums</a></li>
-                <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/everyone/index.md') }}">For Fun!</a></li>
-              </ul>
-            </li><li>
-              <a href="{{ macros::section_url(rel_top=rel_top, path='learn/_index.md') }}">Learn More</a>
-            </li><li>
-              <a href="{{ macros::section_url(rel_top=rel_top, path='download/_index.md') }}">Download</a>
-            </li><li>
-              <a href="{{ macros::page_url(rel_top=rel_top, path='connect.md') }}">Connect</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <a class="footer-icon" href="{{config.extra.github_url | safe}}" title="Git repository"
+          aria-label="Git repository">
+          <i class="fa fa-github"></i>
+        </a>
 
-    {% block full_width_content %}
-    {% endblock full_width_content %}
+        <a class="footer-icon" href="{{config.extra.youtube_url | safe}}" title="YouTube channel"
+          aria-label="YouTube channel">
+          <i class="fa fa-youtube-square"></i>
+        </a>
 
-    <div class="maxwidth">
-      <main class="content">
-        {% block content %}
-        {% endblock content %}
-      </main>
+        <a class="footer-icon" href="{{config.extra.facebook_url | safe}}" title="Facebook" aria-label="Facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </div>
 
-      <footer>
-        <div id="footer-top">
-          <p>Copyright {{ now() | date(format="%Y") }}
-            <a href="https://aas.org/">AAS</a>. HTML generated
-            with <a href="https://www.getzola.org/">Zola</a>.
-            <a href="{{ config.extra.github_url | safe }}">Source code</a>.
-          </p>
+      <p id="footer-logo-text">The AAS WorldWide Telescope project has been supported by:</p>
 
-          <a class="footer-icon" href="https://bit.ly/wwt-signup" title="Newsletter Signup" aria-label="Newsletter Signup">
-            <i class="fa fa-envelope"></i>
-          </a>
+      <div id="logos">
+        <img class="footer-logo" src="{{ rel_top ~ '/assets/aas-publishing-71582561158855.png' }}">
+        <img class="footer-logo" src="{{ rel_top ~ '/assets/nsf-logo-white.png' }}">
+        <img class="footer-logo" src="{{ rel_top ~ '/assets/dotnetfoundationhorizontal.svg' }}">
+        <img class="footer-logo" src="{{ rel_top ~ '/assets/moore-logo-white.png' }}">
+        <img class="footer-logo" src="{{ rel_top ~ '/assets/microsoft-dark.png' }}">
+      </div>
+    </footer>
+  </div>
+</body>
 
-          <a class="footer-icon" href="{{config.extra.twitter_url | safe}}" title="Twitter" aria-label="Twitter">
-            <i class="fa fa-twitter"></i>
-          </a>
-
-          <a class="footer-icon" href="{{config.extra.github_url | safe}}" title="Git repository" aria-label="Git repository">
-            <i class="fa fa-github"></i>
-          </a>
-
-          <a class="footer-icon" href="{{config.extra.youtube_url | safe}}" title="YouTube channel" aria-label="YouTube channel">
-            <i class="fa fa-youtube-square"></i>
-          </a>
-
-          <a class="footer-icon" href="{{config.extra.facebook_url | safe}}" title="Facebook" aria-label="Facebook">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </div>
-
-        <p id="footer-logo-text">The AAS WorldWide Telescope project has been supported by:</p>
-
-        <div id="logos">
-          <img class="footer-logo" src="{{ rel_top ~ 'assets/aas-publishing-71582561158855.png' }}">
-          <img class="footer-logo" src="{{ rel_top ~ 'assets/nsf-logo-white.png' }}">
-          <img class="footer-logo" src="{{ rel_top ~ 'assets/dotnetfoundationhorizontal.svg' }}">
-          <img class="footer-logo" src="{{ rel_top ~ 'assets/moore-logo-white.png' }}">
-          <img class="footer-logo" src="{{ rel_top ~ 'assets/microsoft-dark.png' }}">
-        </div>
-      </footer>
-    </div>
-  </body>
 </html>
