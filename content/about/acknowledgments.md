@@ -101,7 +101,7 @@ these organizations:
 [ipac]: http://www.ipac.caltech.edu/
 [ivoa]: http://www.ivoa.net/
 [nasa]: https://www.nasa.gov/
-[noirlab]: https://nationalastro.org/
+[noirlab]: https://noirlab.edu/
 [princeton]: https://web.astro.princeton.edu/
 [usno]: https://en.wikipedia.org/wiki/United_States_Naval_Observatory
 [vamp]: https://virtualastronomy.org/
