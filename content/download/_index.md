@@ -22,42 +22,24 @@ If you want to use WWT from Python, find installation instructions for
 </section>
 
 
-# AAS WorldWide Telescope 6.0 Beta for Windows {#windows-client}
+# AAS WorldWide Telescope for Windows: Version 6 Beta {#windows-client}
 
-WorldWide Telescope 6.0 Beta is the latest version of AAS WorldWide Telescope
-(WWT). This feature-rich application is now available to everyone as a free
-download.
+We recommend that most users install the WWT Version 6 Beta, which provides the
+latest features and data updates.
 
-{{ bigbutton(text="Download WWT 6.0.11 Beta", url="https://wwtweb.blob.core.windows.net/drops/wwtsetup.6.0.11.msi") }}
+{{ bigbutton(text="Install the Beta", url="./beta/") }}
 
-WWT 6.0 Beta runs on Windows 7/8/8.1/10, in either 32- or 64-bit mode,
-depending on your operating system. It also supports native DirectX 11,
-DirectX 10, and has some support for down-level DirectX 9 hardware running
-through the DirectX 11 API.
-
-### Minimum System Requirements
-
-- Windows 7/8/8.1/10 (older versions of Windows are not supported)
-- Intel 5th generation (Broadwell) or 6th generation (Skylake) Core i CPU
-- 4 GB system memory
-- Intel Integrated graphics associated with 5th generation (Broadwell) or 6th
-  generation (Skylake) chipsets
-
-### Recommended System Requirements
-
-- Intel 5th generation (Broadwell) or 6th generation (Skylake) Core i7 CPU
-- 8+ GB system memory
-- Discrete graphics card with 1+ GB VRAM, DirectX 10 or DirectX 11
-  compatibility, such as NVIDIA GTX 480 or ATI Radeon HD 5850 or better.
-
-Do not attempt to install WWT 5.0 or higher on Windows XP. It will not run and
-can potentially prevent the legacy version from running.
+If you have a “production” installation of WWT, such as a planetarium or museum
+kiosk, **do not install the beta version in your production system without
+significant advance testing.** While the WWT team strives to keep the Windows
+application functioning as reliably as possible, the latest version of WWT
+includes internal changes that may break existing use cases.
 
 
-# AAS WorldWide Telescope 5.5 for Windows
+# WWT for Windows: Version 5 Series
 
-WorldWide Telescope 5.5 is the most recent stable version of AAS WorldWide
-Telescope (WWT).
+The previous stable version of AAS WorldWide Telescope is the Version 5 series.
+The most recent release is version 5.5.03 (July, 2016).
 
 {{ bigbutton(text="Download WWT 5.5.03", url="https://wwtweb.blob.core.windows.net/drops/WWTSetup.5.5.03.msi") }}
 
