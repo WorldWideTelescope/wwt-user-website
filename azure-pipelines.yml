@@ -29,7 +29,8 @@ jobs:
   #   displayName: Check site
 
   - script: |
-      ./zola build -o $(build.artifactStagingDirectory)
+      # The "echo" gets past a Zola confirmation to blow away the output directory
+      echo y |./zola build -o $(build.artifactStagingDirectory)
     displayName: Build site
 
   - task: PublishPipelineArtifact@0
