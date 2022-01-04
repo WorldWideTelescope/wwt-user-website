@@ -1,5 +1,5 @@
 +++
-date = 2022-01-03
+date = 2022-01-04
 title = "WWT Downloads: Registered Beta"
 aliases = ["/Download/Beta"]
 
@@ -9,7 +9,7 @@ titlebox_class = "background-19036"
 
 Thank you for your interest in helping beta-test the next version of AAS
 WorldWide Telescope for Windows! The latest beta release version is
-**6.0.901.0** (Dec 29, 2021; [technical changelog][cl]).
+**6.0.902.0** (Jan 4, 2022; [technical changelog][cl]).
 
 [cl]: https://github.com/WorldWideTelescope/wwt-windows-client/blob/release/WWTExplorer3d/CHANGELOG.md
 
