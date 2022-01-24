@@ -9,7 +9,7 @@ titlebox_class = "background-19036"
 
 Thank you for your interest in helping beta-test the next version of AAS
 WorldWide Telescope for Windows! The latest beta release version is
-**6.0.906.0** (Jan 6, 2022; [technical changelog][cl]).
+**6.0.907.0** (Jan 24, 2022; [technical changelog][cl]).
 
 [cl]: https://github.com/WorldWideTelescope/wwt-windows-client/blob/release/WWTExplorer3d/CHANGELOG.md
 
@@ -19,6 +19,11 @@ WorldWide Telescope for Windows! The latest beta release version is
 First, some disclaimers for “production” installations of WWT, such as
 planetariums and kiosks:
 
+- We are aware of [an issue][irisxe] in which WWT will crash when used with
+  Intel Iris Xe graphics. This appears to be a bug in their driver with no known
+  workaround. Iris is an integrated graphics processor; if your system also has
+  a discrete GPU, you should be able to avoid the crash by configuring it to use
+  that GPU instead of Iris.
 - While the WWT team strives to keep the Windows application functioning as
   reliably as possible, the latest version of WWT includes internal changes that
   may break existing use cases. **Do not install the newest version in
@@ -28,6 +33,8 @@ planetariums and kiosks:
   assistance.
 - If you have any questions about this, contact the team at <a
   href="mailto:wwt@aas.org">wwt@aas.org</a>.
+
+[irisxe]: https://github.com/WorldWideTelescope/wwt-windows-client/issues/196
 
 
 # Signup and Download
