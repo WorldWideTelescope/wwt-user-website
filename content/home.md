@@ -17,6 +17,16 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 [pywwt]: https://pywwt.readthedocs.io/
 [webgl]: https://docs.worldwidetelescope.org/webgl-reference/latest/
 
+<section class="flex-cards">
+
+{% card(text="Go to the Launch Event", url="https://youtu.be/U7PIAKCZHYM", html=1) %}
+The latest version of AAS WorldWide Telescope — WWT 2022 — will launch on
+February 15th! Join us for the launch event on YouTube at 1 PM, US Eastern time.
+Click through to watch the <b>epic</b> trailer and sign up for a reminder.
+{% end %}
+
+</section>
+
 
 # Get Started with WWT
 
