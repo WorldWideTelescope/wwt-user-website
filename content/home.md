@@ -19,10 +19,9 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 
 <section class="flex-cards">
 
-{% card(text="Go to the Launch Event", url="https://youtu.be/U7PIAKCZHYM", html=1) %}
-The latest version of AAS WorldWide Telescope — WWT 2022 — will launch on
-February 15th! Join us for the launch event on YouTube at 1 PM, US Eastern time.
-Click through to watch the <b>epic</b> trailer and sign up for a reminder.
+{% card(text="Learn about WWT 2022", url="https://worldwidetelescope.github.io/editions/2022/", html=1) %}
+The latest version of AAS WorldWide Telescope — WWT 2022 — launched on
+February 15th!
 {% end %}
 
 </section>
