@@ -46,6 +46,6 @@ jobs:
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: |
-        az storage blob upload-batch -s $(build.artifactStagingDirectory) -d '$web'
+        az storage blob upload-batch --overwrite -s $(build.artifactStagingDirectory) -d '$web'
     env:
       AZURE_STORAGE_CONNECTION_STRING: $(AZURE_STORAGE_CONNECTION_STRING)
