@@ -25,11 +25,11 @@ If you want to use WWT from Python, find installation instructions for
 # AAS WorldWide Telescope for Windows: Version 6 {#windows-client}
 
 The current stable release of WWT for Windows is the Version 6 series. The most
-recent release is version 6.1.1.0 (2022 Mar 31; [technical changelog][w6cl]).
+recent release is version 6.1.2.0 (2022 Jul 12; [technical changelog][w6cl]).
 
 [w6cl]: https://github.com/WorldWideTelescope/wwt-windows-client/blob/release/WWTExplorer3d/CHANGELOG.md
 
-{{ bigbutton(text="Download WWT 6.1.1.0", url="https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.1.0.msi") }}
+{{ bigbutton(text="Download WWT 6.1.2.0", url="https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi") }}
 
 See [the WWT 2022 release notes][w6rn] for a big-picture overview of what’s
 changed since version 5. If you have a “production” installation of WWT, such as
