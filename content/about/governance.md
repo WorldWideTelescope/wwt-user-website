@@ -32,13 +32,11 @@ AAS participation in the WWT project is overseen by the WWT Steering
 Committee. Current members of the Steering Committee are:
 
 - [Dr. William Armentrout][armentrout] (Green Bank Observatory; chair)
-- [Prof. Hannah Jang-Condell][jangcondell] (U. Wyoming; AAS Board of Trustees representative)
 - [Prof. Sarah Loebman][loebman] (U. California, Merced)
 - [Dr. Robert Nikutta][nikutta] (NSF's NOIRLab)
 - [Dr. Catherine Zucker][zucker] (Space Telescope Science Institute)
 
 [armentrout]: http://willarmentrout.com/
-[jangcondell]: http://physics.uwyo.edu/~hannah/
 [loebman]: https://sarahloebman.wixsite.com/home
 [nikutta]: https://datalab.noirlab.edu/people.php
 [zucker]: https://catherinezucker.github.io/
@@ -51,11 +49,12 @@ The AAS gratefully acknowledges the service of previous Directors:
 and previous members of the Steering Committee:
 
 - Amanda Bauer
-- Andrew Connolly
 - Nancy Brickhouse
 - Gina Brissenden
 - Jack Burns
+- Andrew Connolly
 - Kelle Cruz
+- Hannah Jang-Condell
 - Buell Jannuzi
 - Jessica Kirkpatrick
 - Kevin Marvel
