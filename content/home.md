@@ -17,11 +17,12 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 [pywwt]: https://pywwt.readthedocs.io/
 [webgl]: https://docs.worldwidetelescope.org/webgl-reference/latest/
 
-<section class="flex-cards">
+<section class="flex-cards flex-skinny">
 
-{% card(text="Learn about WWT 2022", url="https://worldwidetelescope.github.io/editions/2022/", html=1) %}
-The latest version of AAS WorldWide Telescope — WWT 2022 — launched on
-February 15th!
+{% card(text="Explore JWST’s first images in WWT!", url="https://web.wwtassets.org/specials/2022/jwst-release/", html=1) %}
+The first images from <a href="https://webbtelescope.org/">JWST</a>
+were recently revealed to the world. You can explore
+them in full resolution using AAS WorldWide Telescope’s custom app:
 {% end %}
 
 </section>
