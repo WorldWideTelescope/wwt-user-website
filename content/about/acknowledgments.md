@@ -11,7 +11,9 @@ The AAS WorldWide Telescope project (WWT) is a [.NET Foundation][dnf] project
 sponsored and managed by the [American Astronomical Society][aas] (AAS). Work
 on WWT has been supported by the AAS, the US
 [National Science Foundation][nsf] (grants [1550701], [1642446], and [2004840]), the
-[Gordon and Betty Moore Foundation][moore], and [Microsoft].
+[Gordon and Betty Moore Foundation][moore], and [Microsoft]. The WWT team
+thanks [Datadog] for providing monitoring services as part of its Open Source
+program.
 
 [dnf]: https://dotnetfoundation.org/
 [aas]: https://aas.org/
@@ -21,11 +23,14 @@ on WWT has been supported by the AAS, the US
 [2004840]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2004840
 [moore]: https://www.moore.org/
 [Microsoft]: https://www.microsoft.com/
+[Datadog]: https://datadoghq.com/
+
+
 
 
 # Academic Citations
 
-If you use WWT in scholarly work, the canoncial project reference to cite is
+If you use WWT in scholarly work, the canonical project reference to cite is
 [Rosenfield et al. 2018](https://dx.doi.org/10.3847/1538-4365/aab776). The
 canonical reference for the TOAST projection underlying WWT’s all-sky
 spherical visualizations is
