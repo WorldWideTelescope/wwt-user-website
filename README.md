@@ -13,6 +13,12 @@ This includes the static user-facing pages but not the
 [Communities](https://github.com/worldwidetelescope/wwt-website) component of
 the web app.
 
+You can monitor metrics for the WWT web services on [the public WWT metrics
+dashboard][dashboard], made possible by support from [Datadog].
+
+[dashboard]: https://p.us3.datadoghq.com/sb/cf4ddee0-e5ae-11ec-90f8-da7ad0900003-c64423f0e5e0627e2eb777abe3e591b0
+[Datadog]: https://datadoghq.com/
+
 Learn more about WWT [here](https://worldwidetelescope.org/home/).
 
 
@@ -75,18 +81,15 @@ standard [fork-and-pull] model.
 
 ## Acknowledgments
 
-The AAS WorldWide Telescope system is a [.NET Foundation] project managed by
-the non-profit [American Astronomical Society] (AAS). Work on WWT has been
-supported by the AAS, the US [National Science Foundation] (grants [1550701]
-and [1642446]), the [Gordon and Betty Moore Foundation], and [Microsoft].
+The AAS WorldWide Telescope system is a [.NET Foundation] project managed by the
+non-profit [American Astronomical Society] (AAS). Work on WWT has been supported
+by the AAS, the US [National Science Foundation], and other partners. See [the
+WWT user website][acks] for details.
 
 [.NET Foundation]: https://dotnetfoundation.org/
 [American Astronomical Society]: https://aas.org/
 [National Science Foundation]: https://www.nsf.gov/
-[1550701]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1550701
-[1642446]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1642446
-[Gordon and Betty Moore Foundation]: https://www.moore.org/
-[Microsoft]: https://www.microsoft.com/
+[acks]: https://worldwidetelescope.org/about/acknowledgments/
 
 
 ## Legalities
