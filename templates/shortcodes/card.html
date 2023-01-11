@@ -9,7 +9,11 @@
 
   {% if url %}
   <div class="button">
+    {% if targetblank %}
+    <a href="{{url | safe}}" target="_blank">{{text}}</a>
+    {% else %}
     <a href="{{url | safe}}">{{text}}</a>
+    {% endif %}
   </div>
   {% endif %}
 </div>
