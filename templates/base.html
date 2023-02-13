@@ -80,8 +80,12 @@
               <li><a href="{{ macros::page_url(rel_top=rel_top, path='use/everyone/index.md') }}">For Fun!</a></li>
             </ul>
           </li>
-          <li>
-            <a href="{{ macros::section_url(rel_top=rel_top, path='learn/_index.md') }}">Learn More</a>
+          <li class="nav-dropdown-container">
+            <a class="nav-link">Learn</a><i class="fa fa-caret-down"></i>
+            <ul class="nav-dropdown">
+              <li><a href="{{ macros::section_url(rel_top=rel_top, path='learn/_index.md') }}">Docs and More</a></li>
+              <li><a href="{{ macros::page_url(rel_top=rel_top, path='learn/who-uses.md') }}">Who Uses WWT?</a></li>
+            </ul>
           </li>
           <li>
             <a href="{{ macros::section_url(rel_top=rel_top, path='download/_index.md') }}">Download</a>
