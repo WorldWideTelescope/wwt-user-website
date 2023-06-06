@@ -26,6 +26,15 @@ donations to NumFOCUS are tax-deductible as allowed by law. As with any
 donation, you should consult with your personal tax adviser or the IRS about
 your particular tax situation.*
 
+The [American Astronomical Society][aas] (AAS) is a founding sponsor of the
+WorldWide Telescope project and assisted with its transition from a commercial
+to an Open Source effort.  Significant financial, administrative, and
+programmatic support enabled the fully open realization of this amazing
+resource, which continues to be utilized throughout the astronomical community
+for a variety of educational and research-related efforts.
+
+[aas]: https://aas.org/
+
 Work on WWT has been supported by the [American Astronomical Society][aas]
 (AAS), the US [National Science Foundation][nsf] (grants [1550701], [1642446],
 and [2004840]), the [Gordon and Betty Moore Foundation][moore], and [Microsoft].
