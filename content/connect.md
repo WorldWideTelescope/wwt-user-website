@@ -7,7 +7,7 @@ titlebox_class = "background-19025"
 +++
 
 Whether you’re looking for some help, wanting to share something cool that
-you’ve created, or any other reason, the AAS WorldWide Telescope community
+you’ve created, or any other reason, the WorldWide Telescope community
 strives to be welcoming and inclusive.
 
 <section class="flex-cards">
@@ -18,7 +18,7 @@ Connect with WWT users, ask questions, and see the latest news at the online
 {% end %}
 
 {% card(text="Sign up", url="https://bit.ly/wwt-signup", html=1) %}
-Stay in touch by signing up to receive the occasional <b>AAS WorldWide Telescope
+Stay in touch by signing up to receive the occasional <b>WorldWide Telescope
 Newsletter</b>.
 {% end %}
 
@@ -37,7 +37,7 @@ We also invite you to follow WWT on social media platforms like [Twitter],
 [Facebook]: https://facebook.com/wwtelescope
 
 If none of these public channels is quite right for your inquiry, you can
-always email the AAS WWT staff at <wwt@aas.org>.
+always email the WWT leadership at <wwt@aas.org>.
 
 
 # Events
@@ -62,9 +62,9 @@ The <b>WWT Code of Conduct</b> spells out the ground rules for participation
 in WWT events and forums. The bottom line: don’t be a jerk.
 {% end %}
 
-{% card(text="Contact AAS", url="mailto:wwt@aas.org", html=1) %}
+{% card(text="Contact WWT", url="mailto:wwt@aas.org", html=1) %}
 If some aspect of your participation in WWT has made you feel uncomfortable or
-unwelcome, please reach out to AAS.
+unwelcome, please reach out to NumFOCUS.
 {% end %}
 
 </section>

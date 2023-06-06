@@ -10,7 +10,7 @@ titlebox_class = "background-19036"
 <section class="flex-cards">
 
 {% card(text="Launch the web client", url="/webclient/", html=1) %}
-You don’t need to download anything to start using AAS WorldWide Telescope
+You don’t need to download anything to start using WorldWide Telescope
 — our <b>web client</b> runs right in your browser.
 {% end %}
 
@@ -22,7 +22,7 @@ If you want to use WWT from Python, find installation instructions for
 </section>
 
 
-# AAS WorldWide Telescope for Windows: Version 6 {#windows-client}
+# WorldWide Telescope for Windows: Version 6 {#windows-client}
 
 The current stable release of WWT for Windows is the Version 6 series. The most
 recent release is version 6.1.2.0 (2022 Jul 12; [technical changelog][w6cl]).
@@ -58,7 +58,7 @@ running.
 
 # WWT for Windows: Old Version 5 Series
 
-The previous stable version of AAS WorldWide Telescope is the Version 5 series.
+The previous stable version of WorldWide Telescope is the Version 5 series.
 The last release was version 5.5.3 (July, 2016).
 
 - [Download WWT 5.5.3](https://web.wwtassets.org/releases/wwt/wwtsetup-5.5.3.msi")
@@ -89,7 +89,7 @@ more information.
 # WWT Add-in for Excel (Windows only) {#excel-addin}
 
 The WWT Excel add-in enables Windows users to efficiently highlight, organize,
-and import their data into the AAS WorldWide Telescope visualization
+and import their data into the WorldWide Telescope visualization
 environment using the familiar capabilities of Microsoft Excel.
 
 - [Download the WWT Excel Add-in 1.0](http://web.wwtassets.org/releases/exceladdin/wwtexceladdin-1.0.msi).

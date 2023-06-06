@@ -6,7 +6,7 @@ title = "WWT for the Rest of Us"
 titlebox_class = "background-19038"
 +++
 
-AAS WorldWide Telescope isn’t only for professionals — it’s for anyone who’s
+WorldWide Telescope isn’t only for professionals — it’s for anyone who’s
 ready to be delighted by the beauty of our universe!
 
 <section class="flex-cards">

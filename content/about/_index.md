@@ -1,23 +1,22 @@
 +++
 date = 2020-04-07
-title = "About AAS WorldWide Telescope"
+title = "About WorldWide Telescope"
 aliases = ["/About"]
 
 [extra]
 titlebox_class = "background-19036"
 +++
 
-Visit [the WWT landing page](@/home.md) for an overview of what AAS WorldWide
+Visit [the WWT landing page](@/home.md) for an overview of what WorldWide
 Telescope is and why you might want to use it.
 
 
 # Purpose Statement
 
-The purpose of the American Astronomical Society's WorldWide Telescope project
-is to enable the seamless visualization and sharing of scientific data and
-stories from major telescopes, observatories, and institutions among students
-and researchers, through science museums and full-dome immersive planetariums,
-and in scholarly publications.
+The purpose of the WorldWide Telescope project is to enable the seamless
+visualization and sharing of scientific data and stories from major telescopes,
+observatories, and institutions among students and researchers, through science
+museums and full-dome immersive planetariums, and in scholarly publications.
 
 
 # Project History
@@ -80,12 +79,15 @@ universe,” making the two a natural pairing.
 [aas]: https://aas.org/
 [aas-mission]: https://aas.org/about/mission-and-vision-statement
 
-While the Society manages certain core assets and sponsors targeted development
-of the newly-rebranded “AAS WorldWide Telescope,” openness to all comers is a
-core value of the project, and the WWT
-[governance model](@/about/governance.md) aspires to embody that value. If
-you’d like to get involved in the WWT community,
-[connect with us](@/connect.md) and introduce yourself!
+In 2023, the project graduated to fiscal sponsorship by [NumFOCUS], a nonprofit
+dedicated to supporting the open-source scientific computing community.
+
+[NumFOCUS]: https://numfocus.org/
+
+While NumFOCUS helps the project manage certain core assets, openness to all
+comers is a core value, and the WWT [governance model](@/about/governance.md)
+aspires to embody that value. If you’d like to get involved in the WWT
+community, [connect with us](@/connect.md) and introduce yourself!
 
 
 # Awards

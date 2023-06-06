@@ -1,5 +1,5 @@
 +++
-title = "AAS WorldWide Telescope"
+title = "WorldWide Telescope"
 template = "homepage.html"
 aliases = ["/Home"]
 +++
@@ -76,7 +76,7 @@ You can also check out our list of “[Who Uses WWT?](../learn/who-uses/)”.
 
 # Unique Features
 
-AAS WorldWide Telescope marries powerful technology and user-friendliness.
+WorldWide Telescope marries powerful technology and user-friendliness.
 
 <section class="flex-cards">
 
@@ -105,10 +105,12 @@ maps, and more into the WWT environment.
 
 # A Team Effort
 
-WWT is a [.NET Foundation][dnf] project brought to you by the [American
-Astronomical Society][aas] (AAS). Work on WWT has been supported by those
-organizations, the [National Science Foundation][nsf], the [Gordon and Betty
-Moore Foundation][moore], and [Microsoft]. For more information see our
+WorldWide Telescope is a fiscally sponsored project of
+[NumFOCUS](https://numfocus.org/), a nonprofit dedicated to supporting the
+open-source scientific computing community. Work on WWT has been supported the
+[American Astronomical Society][aas] (AAS), the [.NET Foundation][dnf], the
+[National Science Foundation][nsf], the [Gordon and Betty Moore
+Foundation][moore], and [Microsoft]. For more information see our
 [Acknowledgments][acknowledgments].
 
 [aas]: https://aas.org/
