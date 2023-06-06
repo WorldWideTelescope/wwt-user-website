@@ -10,6 +10,35 @@ titlebox_class = "background-19036"
 Visit [the WWT landing page](@/home.md) for an overview of what WorldWide
 Telescope is and why you might want to use it.
 
+WWT is a fiscally sponsored project of [NumFOCUS], a nonprofit dedicated to
+supporting the open-source scientific computing community. If you like WWT and
+want to support our mission, please consider making a [tax-deductible
+donation](https://numfocus.org/donate-for-worldwide-telescope) to support our
+efforts.
+
+[NumFOCUS]: https://numfocus.org/
+
+<div align="center">
+  <a href="https://numfocus.org/donate-for-worldwide-telescope">
+    <img style="height: 60px;"
+         src="https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png">
+  </a>
+</div>
+
+*NumFOCUS is a 501(c)(3) non-profit charity in the United States; as such,
+donations to NumFOCUS are tax-deductible as allowed by law. As with any
+donation, you should consult with your personal tax adviser or the IRS about
+your particular tax situation.*
+
+The [American Astronomical Society][aas] (AAS) is a founding sponsor of the
+WorldWide Telescope project and assisted with its transition from a commercial
+to an Open Source effort.  Significant financial, administrative, and
+programmatic support enabled the fully open realization of this amazing
+resource, which continues to be utilized throughout the astronomical community
+for a variety of educational and research-related efforts.
+
+[aas]: https://aas.org/
+
 
 # Purpose Statement
 
