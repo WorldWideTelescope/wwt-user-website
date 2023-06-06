@@ -3,14 +3,14 @@
 
 # The worldwidetelescope.org “user” website
 
-The user-facing portion of the [AAS](https://aas.org/)
+The user-facing portion of the
 [WorldWide Telescope](https://worldwidetelescope.org/home/) (WWT) website:
 
 ### https://worldwidetelescope.org/home/
 
 This includes the static user-facing pages but not the
 [web client](https://github.com/worldwidetelescope/wwt-web-client) or the
-[API](https://github.com/worldwidetelescope/wwt-website) or the
+[legacy API](https://github.com/worldwidetelescope/wwt-website) or the
 [Communities](https://github.com/worldwidetelescope/wwt-website) component of
 the web app.
 
@@ -90,7 +90,7 @@ Contributions are welcome! If you’re new to the project, please see the
 [WWT Contributors’ Guide] and the [WWT Code of Conduct]. We operate with a
 standard [fork-and-pull] model.
 
-[AAS WorldWide Telescope User Manual]: https://docs.worldwidetelescope.org/user-docs-hub/
+[WorldWide Telescope User Manual]: https://docs.worldwidetelescope.org/user-docs-hub/
 [WWT Contributors’ Guide]: https://worldwidetelescope.github.io/contributing/
 [WWT Code of Conduct]: https://worldwidetelescope.github.io/code-of-conduct/
 [fork-and-pull]: https://help.github.com/en/articles/about-collaborative-development-models
@@ -98,14 +98,12 @@ standard [fork-and-pull] model.
 
 ## Acknowledgments
 
-The AAS WorldWide Telescope system is a [.NET Foundation] project managed by the
-non-profit [American Astronomical Society] (AAS). Work on WWT has been supported
-by the AAS, the US [National Science Foundation], and other partners. See [the
+Work on the WorldWide Telescope system has been supported by the [American
+Astronomical Society] (AAS), the [.NET Foundation], and other partners. See [the
 WWT user website][acks] for details.
 
-[.NET Foundation]: https://dotnetfoundation.org/
 [American Astronomical Society]: https://aas.org/
-[National Science Foundation]: https://www.nsf.gov/
+[.NET Foundation]: https://dotnetfoundation.org/
 [acks]: https://worldwidetelescope.org/about/acknowledgments/
 
 
