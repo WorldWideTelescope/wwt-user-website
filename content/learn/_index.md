@@ -15,7 +15,7 @@ resources:
 <section class="flex-cards">
 
 {% card(text="Read the user manual", url="https://docs.worldwidetelescope.org/user-manual/1/", html=1) %}
-The <b>AAS WorldWide Telescope User Manual</b> shows how to use
+The <b>WorldWide Telescope User Manual</b> shows how to use
 the WWT Windows application and the
 <a href="/webclient/">web client</a>.
 {% end %}

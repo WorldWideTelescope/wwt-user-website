@@ -7,7 +7,7 @@ aliases = ["/Use/Researchers"]
 titlebox_class = "background-19032"
 +++
 
-The **pywwt** package exploits the power of AAS WorldWide Telescope’s
+The **pywwt** package exploits the power of WorldWide Telescope’s
 rendering engine to interactively visualize astronomical images and data
 tables inside your Jupyter notebooks. You can try it out right now with our
 cloud-based notebooks:
@@ -33,7 +33,7 @@ all-sky surveys.
 
 {% card(text="Read the Data Guide", url="https://docs.worldwidetelescope.org/data-guide/1/", html=1) %}
 The <b>WWT Data Guide</b> is your one-stop-shop to understand the details of
-the different data formats used in AAS WorldWide Telescope and the software
+the different data formats used in WorldWide Telescope and the software
 tools that create and manipulate them.
 {% end %}
 

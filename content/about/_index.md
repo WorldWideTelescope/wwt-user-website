@@ -1,23 +1,51 @@
 +++
 date = 2020-04-07
-title = "About AAS WorldWide Telescope"
+title = "About WorldWide Telescope"
 aliases = ["/About"]
 
 [extra]
 titlebox_class = "background-19036"
 +++
 
-Visit [the WWT landing page](@/home.md) for an overview of what AAS WorldWide
+Visit [the WWT landing page](@/home.md) for an overview of what WorldWide
 Telescope is and why you might want to use it.
+
+WWT is a fiscally sponsored project of [NumFOCUS], a nonprofit dedicated to
+supporting the open-source scientific computing community. If you like WWT and
+want to support our mission, please consider making a [tax-deductible
+donation](https://numfocus.org/donate-for-worldwide-telescope) to support our
+efforts.
+
+[NumFOCUS]: https://numfocus.org/
+
+<div align="center">
+  <a href="https://numfocus.org/donate-for-worldwide-telescope">
+    <img style="height: 60px;"
+         src="https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png">
+  </a>
+</div>
+
+*NumFOCUS is a 501(c)(3) non-profit charity in the United States; as such,
+donations to NumFOCUS are tax-deductible as allowed by law. As with any
+donation, you should consult with your personal tax adviser or the IRS about
+your particular tax situation.*
+
+The [American Astronomical Society][aas] (AAS) is a founding sponsor of the
+WorldWide Telescope project and assisted with its transition from a commercial
+to an Open Source effort.  Significant financial, administrative, and
+programmatic support enabled the fully open realization of this amazing
+resource, which continues to be utilized throughout the astronomical community
+for a variety of educational and research-related efforts.
+
+[aas]: https://aas.org/
 
 
 # Purpose Statement
 
-The purpose of the American Astronomical Society's WorldWide Telescope project
-is to enable the seamless visualization and sharing of scientific data and
-stories from major telescopes, observatories, and institutions among students
-and researchers, through science museums and full-dome immersive planetariums,
-and in scholarly publications.
+The purpose of the WorldWide Telescope project is to enable the seamless
+visualization and sharing of scientific data and stories from major telescopes,
+observatories, and institutions among students and researchers, through science
+museums and full-dome immersive planetariums, and in scholarly publications.
 
 
 # Project History
@@ -80,12 +108,15 @@ universe,” making the two a natural pairing.
 [aas]: https://aas.org/
 [aas-mission]: https://aas.org/about/mission-and-vision-statement
 
-While the Society manages certain core assets and sponsors targeted development
-of the newly-rebranded “AAS WorldWide Telescope,” openness to all comers is a
-core value of the project, and the WWT
-[governance model](@/about/governance.md) aspires to embody that value. If
-you’d like to get involved in the WWT community,
-[connect with us](@/connect.md) and introduce yourself!
+In 2023, the project graduated to fiscal sponsorship by [NumFOCUS], a nonprofit
+dedicated to supporting the open-source scientific computing community.
+
+[NumFOCUS]: https://numfocus.org/
+
+While NumFOCUS helps the project manage certain core assets, openness to all
+comers is a core value, and the WWT [governance model](@/about/governance.md)
+aspires to embody that value. If you’d like to get involved in the WWT
+community, [connect with us](@/connect.md) and introduce yourself!
 
 
 # Awards

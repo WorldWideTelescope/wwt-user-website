@@ -7,7 +7,7 @@ aliases = ["/Use/Planetariums"]
 titlebox_class = "background-19026"
 +++
 
-The free, open-source AAS WorldWide Telescope [Windows client][windows-client]
+The free, open-source WorldWide Telescope [Windows client][windows-client]
 can power planetariums ranging from single-projector portable domes to
 world-class facilities with dozens of projectors.
 
@@ -76,11 +76,9 @@ performance.
 
 # Trust
 
-And did we mention that WWT is free and open-source? It’s sponsored by the
-non-profit [American Astronomical Society][aas] (AAS), the major organization of
-professional astronomers in North America.
-
-[aas]: https://aas.org/
+And did we mention that WWT is free and open-source? It’s sponsored by
+[NumFOCUS](https://numfocus.org/), a nonprofit dedicated to supporting the
+open-source scientific computing community.
 
 <section class="flex-cards">
 
@@ -88,9 +86,9 @@ professional astronomers in North America.
 WWT software development is planned and conducted in the open on GitHub.
 {% end %}
 
-{% card(text="Learn about AAS", url="https://aas.org/about-aas") %}
-As a non-profit scholarly society, AAS will always prioritize scientific
-accuracy, open access, and inclusiveness.
+{% card(text="Learn about NumFOCUS", url="https://numfocus.org/") %}
+The mission of NumFOCUS is to promote open practices in research, data, and
+scientific computing.
 {% end %}
 
 </section>

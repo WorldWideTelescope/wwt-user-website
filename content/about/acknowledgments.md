@@ -7,13 +7,39 @@ aliases = ["/About/Acknowledgments"]
 titlebox_class = "background-19038"
 +++
 
-The AAS WorldWide Telescope project (WWT) is a [.NET Foundation][dnf] project
-sponsored and managed by the [American Astronomical Society][aas] (AAS). Work
-on WWT has been supported by the AAS, the US
-[National Science Foundation][nsf] (grants [1550701], [1642446], and [2004840]), the
-[Gordon and Betty Moore Foundation][moore], and [Microsoft]. The WWT team
-thanks [Datadog] for providing monitoring services as part of its Open Source
-program.
+WorldWide Telescope is a fiscally sponsored project of
+[NumFOCUS](https://numfocus.org/), a nonprofit dedicated to supporting the
+open-source scientific computing community. If you like WWT and want to support
+our mission, consider making a [tax-deductible
+donation](https://numfocus.org/donate-for-worldwide-telescope) to support our
+efforts.
+
+<div align="center">
+  <a href="https://numfocus.org/donate-for-worldwide-telescope">
+    <img style="height: 60px;"
+         src="https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png">
+  </a>
+</div>
+
+*NumFOCUS is a 501(c)(3) non-profit charity in the United States; as such,
+donations to NumFOCUS are tax-deductible as allowed by law. As with any
+donation, you should consult with your personal tax adviser or the IRS about
+your particular tax situation.*
+
+The [American Astronomical Society][aas] (AAS) is a founding sponsor of the
+WorldWide Telescope project and assisted with its transition from a commercial
+to an Open Source effort.  Significant financial, administrative, and
+programmatic support enabled the fully open realization of this amazing
+resource, which continues to be utilized throughout the astronomical community
+for a variety of educational and research-related efforts.
+
+[aas]: https://aas.org/
+
+Work on WWT has been supported by the [American Astronomical Society][aas]
+(AAS), the US [National Science Foundation][nsf] (grants [1550701], [1642446],
+and [2004840]), the [Gordon and Betty Moore Foundation][moore], and [Microsoft].
+The WWT team thanks [Datadog] for providing monitoring services as part of its
+Open Source program.
 
 [dnf]: https://dotnetfoundation.org/
 [aas]: https://aas.org/
@@ -24,8 +50,6 @@ program.
 [moore]: https://www.moore.org/
 [Microsoft]: https://www.microsoft.com/
 [Datadog]: https://datadoghq.com/
-
-
 
 
 # Academic Citations
@@ -115,7 +139,7 @@ And these individuals:
 
 - Alyssa Goodman ([Harvard University][cfa])
 - Tom McGlynn ([NASA SkyView][skyview])
-- August (Gus) Muench ([Harvard University][cfa] / [AAS][aas])
+- August (Gus) Muench ([AAS][aas])
 - Alex Szalay ([Johns Hopkins][jhu-pa])
 - Patricia Udomprasert ([Harvard University][cfa])
 - David Weigel ([U. S. Space & Rocket Center][usrc])

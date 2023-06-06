@@ -7,7 +7,7 @@ aliases = ["/Use/Educators"]
 titlebox_class = "background-19023"
 +++
 
-AAS WorldWide Telescope empowers learners of all ages to explore the universe
+WorldWide Telescope empowers learners of all ages to explore the universe
 interactively and in three dimensions. Not only is this cool, it’s effective!
 But you don’t have to take our word for it — check out the materials and
 research of the [WWT Ambassadors][ambassadors] (WWTA) program, an effort based

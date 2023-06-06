@@ -6,7 +6,7 @@ title = "Who Uses WWT?"
 titlebox_class = "background-19026"
 +++
 
-AAS WorldWide telescope is used around the world for education, research,
+WorldWide Telescope is used around the world for education, research,
 exploration, and entertainment. Here are just a few places where you can find
 WWT!
 
@@ -47,4 +47,4 @@ WWT!
 [“What is *Chandra* Doing Now?”]: http://chandraobservatory.herokuapp.com/
 [WWT Ambassadors]: https://wwtambassadors.org/
 
-Reach out to WWT staff at <wwt@aas.org> to be added to the list!
+Reach out to WWT leadership at <wwt@aas.org> to be added to the list!
