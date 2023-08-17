@@ -1,4 +1,4 @@
-base_url = "//worldwidetelescope.org/"
+base_url = "https://worldwidetelescope.org/"
 title = "WorldWide Telescope"
 description = "WorldWide Telescope is a tool for showcasing astronomical data and knowledge."
 default_language = "en"
@@ -7,7 +7,7 @@ highlight_code = true
 build_search_index = false
 
 [slugify]
-paths = "safe"  # Preserve capitalization
+paths = "safe" # Preserve capitalization
 
 [extra]
 github_url = "https://github.com/WorldWideTelescope/wwt-user-website"
