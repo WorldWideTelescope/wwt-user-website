@@ -37,7 +37,7 @@ We also invite you to follow WWT on social media platforms like [Twitter],
 [Facebook]: https://facebook.com/wwtelescope
 
 If none of these public channels is quite right for your inquiry, you can
-always email the WWT leadership at <wwt@aas.org>.
+send an email to <hello@worldwidetelescope.org>.
 
 
 # Events
@@ -62,7 +62,7 @@ The <b>WWT Code of Conduct</b> spells out the ground rules for participation
 in WWT events and forums. The bottom line: don’t be a jerk.
 {% end %}
 
-{% card(text="Contact WWT", url="mailto:wwt@aas.org", html=1) %}
+{% card(text="Report a Conduct Issue", url="https://numfocus.typeform.com/to/ynjGdT", html=1) %}
 If some aspect of your participation in WWT has made you feel uncomfortable or
 unwelcome, please reach out to NumFOCUS.
 {% end %}

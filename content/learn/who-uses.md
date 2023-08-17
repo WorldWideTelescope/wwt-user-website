@@ -47,4 +47,4 @@ WWT!
 [“What is *Chandra* Doing Now?”]: http://chandraobservatory.herokuapp.com/
 [WWT Ambassadors]: https://wwtambassadors.org/
 
-Reach out to WWT leadership at <wwt@aas.org> to be added to the list!
+Reach out to the WWT community at <hello@worldwidetelescope.org> to be added to the list!
