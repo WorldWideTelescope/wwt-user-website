@@ -219,3 +219,10 @@ a {
     outline: none;
   }
 }
+
+// Flex container for the educator page buttons
+.flex-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

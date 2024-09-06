@@ -58,6 +58,8 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 <b>Interested in the Moon?</b> Explore five different lunar imagesets using WWT.
 {% end %}
 
+For more astronomical interactives powered by WWT, check out <a href="https://www.cosmicds.cfa.harvard.edu/" target="_blank" rel="noopener noreferrer">Cosmic Data Stories</a>.
+
 </section>
 
 
