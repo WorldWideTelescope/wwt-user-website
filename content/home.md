@@ -17,6 +17,8 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 [pywwt]: https://pywwt.readthedocs.io/
 [webgl]: https://docs.worldwidetelescope.org/webgl-reference/latest/
 
+# See What's Possible
+
 <section class="flex-cards">
 
 {% card(text="Compare Hubble and Webb in WWT!", url="https://web.wwtassets.org/specials/2023/cosmicds-carina/", html=1, targetblank=1) %}
@@ -25,6 +27,22 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 
 {% card(text="Explore other beautiful JWST images", url="https://web.wwtassets.org/specials/2023/jwst-aas241/", html=1, targetblank=1) %}
 <b>Dozens more JWST images await you!</b> They’re all in WWT.
+{% end %}
+
+{% card(text="Explore the nova in WWT", url="https://projects.cosmicds.cfa.harvard.edu/blaze-star-nova/", html=1, targetblank=1) %}
+<b>Preview the upcoming nova and learn how to find it in the sky!</b> WWT makes it possible.
+{% end %}
+
+{% card(text="Learn about the Radcliffe Wave", url="https://projects.cosmicds.cfa.harvard.edu/radwave-in-motion/", html=1, targetblank=1) %}
+<b>Discover the oscillating Radcliffe Wave!</b> Using WWT, it can be viewed in both 2D and 3D.
+{% end %}
+
+{% card(text="Revisit the eclipse", url="https://projects.cosmicds.cfa.harvard.edu/solar-eclipse-2024/", html=1, targetblank=1) %}
+<b>Want to revisit the solar eclipse?</b> WWT lets you see how it looked all over the world!
+{% end %}
+
+{% card(text="To the Moon!", url="https://web.wwtassets.org/specials/2021/iotmn/", html=1, targetblank=1) %}
+<b>Interested in the Moon?</b> Explore five different lunar imagesets using WWT.
 {% end %}
 
 </section>
