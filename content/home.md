@@ -17,6 +17,19 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 [pywwt]: https://pywwt.readthedocs.io/
 [webgl]: https://docs.worldwidetelescope.org/webgl-reference/latest/
 
+
+# Get Started with WWT
+
+{% videoteaser(lbid="intro", img="../assets/video-thumbnail.jpg", ytid="CD_W6wJp26E") %}
+<ul>
+  <li><i><a href="#intro">Watch the trailer</a> for a video introduction.</i></li>
+  <li><i>Got Python? Check out our
+    cloud-based <a href="https://pywwt.readthedocs.io/en/stable/#quick-start">Jupyter notebooks</a>.</i></li>
+  <li><i><a href="/webclient/">Launch the WWT web client</a>!</i></li>
+</ul>
+{% end %}
+
+
 # See What's Possible
 
 <section class="flex-cards">
@@ -46,18 +59,6 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 {% end %}
 
 </section>
-
-
-# Get Started with WWT
-
-{% videoteaser(lbid="intro", img="../assets/video-thumbnail.jpg", ytid="CD_W6wJp26E") %}
-<ul>
-  <li><i><a href="#intro">Watch the trailer</a> for a video introduction.</i></li>
-  <li><i>Got Python? Check out our
-    cloud-based <a href="https://pywwt.readthedocs.io/en/stable/#quick-start">Jupyter notebooks</a>.</i></li>
-  <li><i><a href="/webclient/">Launch the WWT web client</a>!</i></li>
-</ul>
-{% end %}
 
 
 # Something for Everyone
