@@ -26,7 +26,7 @@ that use WWT to transform classroom astronomy education:
 
 </section>
 
-This video gives an overview of a [Cosmic Data Story][cosmicds-eclipse] focused on the 2024 Total Solar Eclipse:
+This video gives an overview of a Cosmic Data Story [focused on the 2024 Total Solar Eclipse][cosmicds-eclipse]:
 
 {{ youtube(id="DzXVy_99Ldg", class="youtube-embed") }}
 
