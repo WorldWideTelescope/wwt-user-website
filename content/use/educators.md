@@ -26,6 +26,12 @@ that use WWT to transform classroom astronomy education:
 
 </section>
 
+This video gives an overview of a [Cosmic Data Story][cosmicds-eclipse] focused on the 2024 Total Solar Eclipse:
+
+{{ youtube(id="DzXVy_99Ldg", class="youtube-embed") }}
+
+[cosmicds-eclipse]: https://projects.cosmicds.cfa.harvard.edu/solar-eclipse-2024/
+
 Here’s a video overview of the WWTA [ThinkSpace Seasons Lab][thinkspace-seasons]:
 
 [thinkspace-seasons]: https://wwtambassadors.org/thinkspace
