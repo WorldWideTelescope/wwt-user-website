@@ -10,14 +10,27 @@ titlebox_class = "background-19023"
 WorldWide Telescope empowers learners of all ages to explore the universe
 interactively and in three dimensions. Not only is this cool, it’s effective!
 But you don’t have to take our word for it — check out the materials and
-research of the [WWT Ambassadors][ambassadors] (WWTA) program, an effort based
-at the [Center for Astrophysics | Harvard & Smithsonian][cfa] that uses WWT to
-transform classroom astronomy education:
+research of the [Cosmic Data Stories][cosmicds] (CosmicDS) and [WWT Ambassadors][ambassadors]
+(WWTA) programs. These are both efforts based at the [Center for Astrophysics | Harvard & Smithsonian][cfa]
+that use WWT to transform classroom astronomy education:
 
+[cosmicds]: https://www.cosmicds.cfa.harvard.edu/
 [ambassadors]: https://wwtambassadors.org/
 [cfa]: https://www.cfa.harvard.edu/
 
-{{ bigbutton(text="Go to the WWTA homepage", url="https://wwtambassadors.org/") }}
+<section class="flex-buttons">
+
+{{ bigbutton(text="CosmicDS homepage", url="https://www.cosmicds.cfa.harvard.edu/") }}
+
+{{ bigbutton(text="WWTA homepage", url="https://wwtambassadors.org/") }}
+
+</section>
+
+This video gives an overview of a Cosmic Data Story [focused on the 2024 Total Solar Eclipse][cosmicds-eclipse]:
+
+{{ youtube(id="DzXVy_99Ldg", class="youtube-embed") }}
+
+[cosmicds-eclipse]: https://projects.cosmicds.cfa.harvard.edu/solar-eclipse-2024/
 
 Here’s a video overview of the WWTA [ThinkSpace Seasons Lab][thinkspace-seasons]:
 

@@ -119,6 +119,7 @@ body {
       p {
         margin: 0 0 1rem 0;
         flex-grow: 1;
+        text-align: center;
       }
 
       img {
@@ -217,4 +218,11 @@ a {
     justify-content: center;
     outline: none;
   }
+}
+
+// Flex container for the educator page buttons
+.flex-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
