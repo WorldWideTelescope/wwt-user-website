@@ -34,6 +34,10 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 
 <section class="flex-cards">
 
+{% card(text="Why Roman?", url="https://projects.cosmicds.cfa.harvard.edu/why-roman", html=1, targetblank=1) %}
+<b>Learn why NASA's launching a new telescope!</b> Discover Roman with a WWT-powered interactive
+{% end %}
+
 {% card(text="Track Artemis II", url="https://projects.cosmicds.cfa.harvard.edu/artemis-ii/", html=1, targetblank=1) %}
 <b>Want to track NASA's Artemis II?</b> View its position and mission trajectory in WWT.
 {% end %}
@@ -48,10 +52,6 @@ The WWT ecosystem includes a [Windows application][windows-client], an
 
 {% card(text="Learn about the Radcliffe Wave", url="https://projects.cosmicds.cfa.harvard.edu/radwave-in-motion/", html=1, targetblank=1) %}
 <b>Discover the oscillating Radcliffe Wave!</b> Using WWT, it can be viewed in both 2D and 3D.
-{% end %}
-
-{% card(text="Watch the parade!" url="https://projects.cosmicds.cfa.harvard.edu/planet-parade/", html=1, targetblank=1) %}
-<b>See multiple planets in the sky at once!</b> See where the planets will be using WWT.
 {% end %}
 
 {% card(text="To the Moon!", url="https://web.wwtassets.org/specials/2021/iotmn/", html=1, targetblank=1) %}
